@@ -55,7 +55,7 @@ public enum  ErrorCode {
     private final String code;
 
     /** 枚举描述 */
-    private final String message;
+private final String message;
 
     private ErrorCode(String code, String message) {
         this.code = code;
