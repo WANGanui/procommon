@@ -36,19 +36,13 @@ public enum  ErrorCode {
     /** 未登录异常 */
     NOT_LOGIN_EXCEPTION("00010", "未登录异常"),
 
-    /**
-     * 账号不存在"
-     */
+    /** 账号不存在 */
     ACCOUNT_NON_EXISTEND("00011","账号不存在"),
 
-    /**
-     * 密码错误
-     */
+    /** 密码错误 */
     ACCOUNT_PASSWORD_ERROR("00012","密码错误"),
 
-    /**
-     * 没有权限
-     */
+    /** 没有权限 */
     NO_PERMISSION("00013","没有此权限");
 
     /** 枚举值 */
