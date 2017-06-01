@@ -57,6 +57,14 @@ public class ProjectCriteria implements Serializable {
 
     protected List<Integer> monthList;
 
+    protected String leaderid;
+
+    protected String leaderidMin;
+
+    protected String leaderidMax;
+
+    protected List<String> leaderidList;
+
     protected String leader;
 
     protected String leaderMin;
@@ -351,6 +359,38 @@ public class ProjectCriteria implements Serializable {
 
     public List<Integer> getMonthList() {
         return monthList;
+    }
+
+    public void setLeaderid(String leaderid) {
+        this.leaderid = leaderid == null ? null : leaderid.trim();
+    }
+
+    public String getLeaderid() {
+        return leaderid;
+    }
+
+    public void setLeaderidMin(String leaderidMin) {
+        this.leaderidMin = leaderidMin == null ? null : leaderidMin.trim();
+    }
+
+    public String getLeaderidMin() {
+        return leaderidMin;
+    }
+
+    public void setLeaderidMax(String leaderidMax) {
+        this.leaderidMax = leaderidMax == null ? null : leaderidMax.trim();
+    }
+
+    public String getLeaderidMax() {
+        return leaderidMax;
+    }
+
+    public void setLeaderidList(List<String> leaderidList) {
+        this.leaderidList = leaderidList;
+    }
+
+    public List<String> getLeaderidList() {
+        return leaderidList;
     }
 
     public void setLeader(String leader) {

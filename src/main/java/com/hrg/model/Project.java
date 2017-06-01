@@ -68,6 +68,16 @@ public class Project implements Serializable {
     private Integer month;
 
     /**
+     * 负责人id
+     */
+    public static final String LEADERID = "leaderid";
+
+    /**
+     * 负责人id
+     */
+    private String leaderid;
+
+    /**
      * 项目负责人
      */
     public static final String LEADER = "leader";
@@ -273,6 +283,22 @@ public class Project implements Serializable {
      */
     public void setMonth(Integer month) {
         this.month = month;
+    }
+
+    /**
+     * @return leaderid
+     *         负责人id
+     */
+    public String getLeaderid() {
+        return leaderid;
+    }
+
+    /**
+     * @param leaderid
+     *         负责人id
+     */
+    public void setLeaderid(String leaderid) {
+        this.leaderid = leaderid == null ? null : leaderid.trim();
     }
 
     /**
