@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * hrg_pre_sys_role
  */
-public class HrgPreSysRole implements Serializable {
+public class PreSysRole implements Serializable {
     /**
      * 角色ID
      */

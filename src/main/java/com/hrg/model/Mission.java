@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * hrg_mission
  */
-public class HrgMission implements Serializable {
+public class Mission implements Serializable {
     /**
      * dataid
      */

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class HrgNoticeCriteria implements Serializable {
+public class NoticeCriteria implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -75,7 +75,7 @@ public class HrgNoticeCriteria implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public HrgNoticeCriteria() {
+    public NoticeCriteria() {
          
     }
 

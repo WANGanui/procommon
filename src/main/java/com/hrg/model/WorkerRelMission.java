@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * hrg_worker_rel_mission
  */
-public class HrgWorkerRelMission implements Serializable {
+public class WorkerRelMission implements Serializable {
     /**
      * dataid
      */

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class HrgWorkdataCriteria implements Serializable {
+public class WorkdataCriteria implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -93,7 +93,7 @@ public class HrgWorkdataCriteria implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public HrgWorkdataCriteria() {
+    public WorkdataCriteria() {
          
     }
 

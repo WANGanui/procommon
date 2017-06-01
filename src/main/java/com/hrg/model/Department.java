@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * hrg_department
  */
-public class HrgDepartment implements Serializable {
+public class Department implements Serializable {
     /**
      * dataid
      */

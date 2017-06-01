@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * hrg_pre_sys_permission
  */
-public class HrgPreSysPermission implements Serializable {
+public class PreSysPermission implements Serializable {
     /**
      * dataid
      */

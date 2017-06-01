@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * hrg_worker_rel_project
  */
-public class HrgWorkerRelProject implements Serializable {
+public class WorkerRelProject implements Serializable {
     /**
      * dataid
      */

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class HrgMissionCriteria implements Serializable {
+public class MissionCriteria implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -105,7 +105,7 @@ public class HrgMissionCriteria implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public HrgMissionCriteria() {
+    public MissionCriteria() {
          
     }
 

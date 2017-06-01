@@ -3,7 +3,7 @@ package com.hrg.model;
 import java.io.Serializable;
 import java.util.List;
 
-public class HrgPreSysRoleCriteria implements Serializable {
+public class PreSysRoleCriteria implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -38,7 +38,7 @@ public class HrgPreSysRoleCriteria implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public HrgPreSysRoleCriteria() {
+    public PreSysRoleCriteria() {
          
     }
 

@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * hrg_project
  */
-public class HrgProject implements Serializable {
+public class Project implements Serializable {
     /**
      * dataid
      */
