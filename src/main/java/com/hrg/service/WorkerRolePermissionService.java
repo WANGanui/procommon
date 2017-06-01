@@ -19,9 +19,9 @@ public interface WorkerRolePermissionService {
     /**
      * 方法说明：根据角色ID查询角色权限
      * @Author 王向涛 2016-12-07 11:05:28
-     * @param warehouseroledataid 库房角色dataid
+     * @param workerRoledataid 员工角色dataid
      * @return
      * @throws Exception
      */
-    List<WorkerRolePermission>  selectRoleByRoledataid(String warehouseroledataid) throws Exception;
+    List<WorkerRolePermission>  selectRoleByRoledataid(String workerRoledataid) throws Exception;
 }
