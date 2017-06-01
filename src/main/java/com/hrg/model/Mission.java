@@ -80,22 +80,22 @@ public class Mission implements Serializable {
     /**
      * 项目id
      */
-    public static final String PRODATAID = "proDataid";
+    public static final String PRODATAID = "prodataid";
 
     /**
      * 项目id
      */
-    private String proDataid;
+    private String prodataid;
 
     /**
      * 项目名称
      */
-    public static final String PRONAME = "proName";
+    public static final String PRONAME = "proname";
 
     /**
      * 项目名称
      */
-    private String proName;
+    private String proname;
 
     /**
      * 备注
@@ -302,35 +302,35 @@ public class Mission implements Serializable {
     }
 
     /**
-     * @return proDataid
+     * @return prodataid
      *         项目id
      */
-    public String getProDataid() {
-        return proDataid;
+    public String getProdataid() {
+        return prodataid;
     }
 
     /**
-     * @param proDataid
+     * @param prodataid
      *         项目id
      */
-    public void setProDataid(String proDataid) {
-        this.proDataid = proDataid == null ? null : proDataid.trim();
+    public void setProdataid(String prodataid) {
+        this.prodataid = prodataid == null ? null : prodataid.trim();
     }
 
     /**
-     * @return proName
+     * @return proname
      *         项目名称
      */
-    public String getProName() {
-        return proName;
+    public String getProname() {
+        return proname;
     }
 
     /**
-     * @param proName
+     * @param proname
      *         项目名称
      */
-    public void setProName(String proName) {
-        this.proName = proName == null ? null : proName.trim();
+    public void setProname(String proname) {
+        this.proname = proname == null ? null : proname.trim();
     }
 
     /**

@@ -63,21 +63,21 @@ public class MissionCriteria implements Serializable {
 
     protected List<String> stateList;
 
-    protected String proDataid;
+    protected String prodataid;
 
-    protected String proDataidMin;
+    protected String prodataidMin;
 
-    protected String proDataidMax;
+    protected String prodataidMax;
 
-    protected List<String> proDataidList;
+    protected List<String> prodataidList;
 
-    protected String proName;
+    protected String proname;
 
-    protected String proNameMin;
+    protected String pronameMin;
 
-    protected String proNameMax;
+    protected String pronameMax;
 
-    protected List<String> proNameList;
+    protected List<String> pronameList;
 
     protected String remark;
 
@@ -385,68 +385,68 @@ public class MissionCriteria implements Serializable {
         return stateList;
     }
 
-    public void setProDataid(String proDataid) {
-        this.proDataid = proDataid == null ? null : proDataid.trim();
+    public void setProdataid(String prodataid) {
+        this.prodataid = prodataid == null ? null : prodataid.trim();
     }
 
-    public String getProDataid() {
-        return proDataid;
+    public String getProdataid() {
+        return prodataid;
     }
 
-    public void setProDataidMin(String proDataidMin) {
-        this.proDataidMin = proDataidMin == null ? null : proDataidMin.trim();
+    public void setProdataidMin(String prodataidMin) {
+        this.prodataidMin = prodataidMin == null ? null : prodataidMin.trim();
     }
 
-    public String getProDataidMin() {
-        return proDataidMin;
+    public String getProdataidMin() {
+        return prodataidMin;
     }
 
-    public void setProDataidMax(String proDataidMax) {
-        this.proDataidMax = proDataidMax == null ? null : proDataidMax.trim();
+    public void setProdataidMax(String prodataidMax) {
+        this.prodataidMax = prodataidMax == null ? null : prodataidMax.trim();
     }
 
-    public String getProDataidMax() {
-        return proDataidMax;
+    public String getProdataidMax() {
+        return prodataidMax;
     }
 
-    public void setProDataidList(List<String> proDataidList) {
-        this.proDataidList = proDataidList;
+    public void setProdataidList(List<String> prodataidList) {
+        this.prodataidList = prodataidList;
     }
 
-    public List<String> getProDataidList() {
-        return proDataidList;
+    public List<String> getProdataidList() {
+        return prodataidList;
     }
 
-    public void setProName(String proName) {
-        this.proName = proName == null ? null : proName.trim();
+    public void setProname(String proname) {
+        this.proname = proname == null ? null : proname.trim();
     }
 
-    public String getProName() {
-        return proName;
+    public String getProname() {
+        return proname;
     }
 
-    public void setProNameMin(String proNameMin) {
-        this.proNameMin = proNameMin == null ? null : proNameMin.trim();
+    public void setPronameMin(String pronameMin) {
+        this.pronameMin = pronameMin == null ? null : pronameMin.trim();
     }
 
-    public String getProNameMin() {
-        return proNameMin;
+    public String getPronameMin() {
+        return pronameMin;
     }
 
-    public void setProNameMax(String proNameMax) {
-        this.proNameMax = proNameMax == null ? null : proNameMax.trim();
+    public void setPronameMax(String pronameMax) {
+        this.pronameMax = pronameMax == null ? null : pronameMax.trim();
     }
 
-    public String getProNameMax() {
-        return proNameMax;
+    public String getPronameMax() {
+        return pronameMax;
     }
 
-    public void setProNameList(List<String> proNameList) {
-        this.proNameList = proNameList;
+    public void setPronameList(List<String> pronameList) {
+        this.pronameList = pronameList;
     }
 
-    public List<String> getProNameList() {
-        return proNameList;
+    public List<String> getPronameList() {
+        return pronameList;
     }
 
     public void setRemark(String remark) {

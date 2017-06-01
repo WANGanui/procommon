@@ -1,6 +1,7 @@
 package com.hrg.service;
 
 import com.hrg.model.Mission;
+import com.hrg.model.MissionCriteria;
 import com.hrg.model.Worker;
 
 import java.util.List;
@@ -11,22 +12,12 @@ import java.util.List;
 public interface MissionService {
 
     /**
-     * 根据员工id查询员工任务列表
-     * @param workerdataid 员工id
-     * @param state 任务状态
+     * 条件查询任务列表
+     * @param example 条件实体
      * @return
      * @throws Exception
      */
-    List<Mission> selectListByWorker(String workerdataid,String state) throws Exception;
-
-    /**
-     * 根据项目id查询任务列表
-     * @param prodataid 项目id
-     * @param state 状态
-     * @return
-     * @throws Exception
-     */
-    List<Mission> selectListByProject(String prodataid,String state) throws Exception;
+    List<Mission> selectList(MissionCriteria example) throws Exception;
 
     /**
      * 根据主键查询任务详情
@@ -39,19 +30,19 @@ public interface MissionService {
     /**
      * 创建任务
      * @param mission 任务实体
-     * @param worker 创建人实体
+     * @param workerList 任务人员集合
      * @return
      * @throws Exception
      */
-    boolean insert(Mission mission, Worker worker) throws Exception;
+    boolean insert(Mission mission, List<Worker> workerList) throws Exception;
 
     /**
      * 修改任务
      * @param mission 任务实体
-     * @param worker 修改人实体
+     * @param workerList 任务人员集合
      * @return
      * @throws Exception
      */
-    boolean update(Mission mission,Worker worker) throws Exception;
-    
+    boolean update(Mission mission,List<Worker> workerList) throws Exception;
+
 }
