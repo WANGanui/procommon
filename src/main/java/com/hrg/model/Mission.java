@@ -127,6 +127,66 @@ public class Mission implements Serializable {
      */
     private String proportion;
 
+    /**
+     * 创建人
+     */
+    public static final String CREATOR = "creator";
+
+    /**
+     * 创建人
+     */
+    private String creator;
+
+    /**
+     * 创建人id
+     */
+    public static final String CREATORDATAID = "creatordataid";
+
+    /**
+     * 创建人id
+     */
+    private String creatordataid;
+
+    /**
+     * 创建时间
+     */
+    public static final String CREATETIME = "createtime";
+
+    /**
+     * 创建时间
+     */
+    private Date createtime;
+
+    /**
+     * 修改人
+     */
+    public static final String MODIFY = "modify";
+
+    /**
+     * 修改人
+     */
+    private String modify;
+
+    /**
+     * 修改人id
+     */
+    public static final String MODIFYDATAID = "modifydataid";
+
+    /**
+     * 修改人id
+     */
+    private String modifydataid;
+
+    /**
+     * 修改时间
+     */
+    public static final String MODIFYTIME = "modifytime";
+
+    /**
+     * 修改时间
+     */
+    private Date modifytime;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -319,5 +379,101 @@ public class Mission implements Serializable {
      */
     public void setProportion(String proportion) {
         this.proportion = proportion == null ? null : proportion.trim();
+    }
+
+    /**
+     * @return creator
+     *         创建人
+     */
+    public String getCreator() {
+        return creator;
+    }
+
+    /**
+     * @param creator
+     *         创建人
+     */
+    public void setCreator(String creator) {
+        this.creator = creator == null ? null : creator.trim();
+    }
+
+    /**
+     * @return creatordataid
+     *         创建人id
+     */
+    public String getCreatordataid() {
+        return creatordataid;
+    }
+
+    /**
+     * @param creatordataid
+     *         创建人id
+     */
+    public void setCreatordataid(String creatordataid) {
+        this.creatordataid = creatordataid == null ? null : creatordataid.trim();
+    }
+
+    /**
+     * @return createtime
+     *         创建时间
+     */
+    public Date getCreatetime() {
+        return createtime;
+    }
+
+    /**
+     * @param createtime
+     *         创建时间
+     */
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
+    }
+
+    /**
+     * @return modify
+     *         修改人
+     */
+    public String getModify() {
+        return modify;
+    }
+
+    /**
+     * @param modify
+     *         修改人
+     */
+    public void setModify(String modify) {
+        this.modify = modify == null ? null : modify.trim();
+    }
+
+    /**
+     * @return modifydataid
+     *         修改人id
+     */
+    public String getModifydataid() {
+        return modifydataid;
+    }
+
+    /**
+     * @param modifydataid
+     *         修改人id
+     */
+    public void setModifydataid(String modifydataid) {
+        this.modifydataid = modifydataid == null ? null : modifydataid.trim();
+    }
+
+    /**
+     * @return modifytime
+     *         修改时间
+     */
+    public Date getModifytime() {
+        return modifytime;
+    }
+
+    /**
+     * @param modifytime
+     *         修改时间
+     */
+    public void setModifytime(Date modifytime) {
+        this.modifytime = modifytime;
     }
 }

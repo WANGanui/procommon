@@ -95,6 +95,50 @@ public class ProjectCriteria implements Serializable {
 
     protected List<String> remarkList;
 
+    protected String creator;
+
+    protected String creatorMin;
+
+    protected String creatorMax;
+
+    protected List<String> creatorList;
+
+    protected Date createtime;
+
+    protected Date createtimeMin;
+
+    protected Date createtimeMax;
+
+    protected String modify;
+
+    protected String modifyMin;
+
+    protected String modifyMax;
+
+    protected List<String> modifyList;
+
+    protected Date modifytime;
+
+    protected Date modifytimeMin;
+
+    protected Date modifytimeMax;
+
+    protected String creatordataid;
+
+    protected String creatordataidMin;
+
+    protected String creatordataidMax;
+
+    protected List<String> creatordataidList;
+
+    protected String modifydataid;
+
+    protected String modifydataidMin;
+
+    protected String modifydataidMax;
+
+    protected List<String> modifydataidList;
+
     private static final long serialVersionUID = 1L;
 
     public ProjectCriteria() {
@@ -459,5 +503,181 @@ public class ProjectCriteria implements Serializable {
 
     public List<String> getRemarkList() {
         return remarkList;
+    }
+
+    public void setCreator(String creator) {
+        this.creator = creator == null ? null : creator.trim();
+    }
+
+    public String getCreator() {
+        return creator;
+    }
+
+    public void setCreatorMin(String creatorMin) {
+        this.creatorMin = creatorMin == null ? null : creatorMin.trim();
+    }
+
+    public String getCreatorMin() {
+        return creatorMin;
+    }
+
+    public void setCreatorMax(String creatorMax) {
+        this.creatorMax = creatorMax == null ? null : creatorMax.trim();
+    }
+
+    public String getCreatorMax() {
+        return creatorMax;
+    }
+
+    public void setCreatorList(List<String> creatorList) {
+        this.creatorList = creatorList;
+    }
+
+    public List<String> getCreatorList() {
+        return creatorList;
+    }
+
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
+    }
+
+    public Date getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetimeMin(Date createtimeMin) {
+        this.createtimeMin = createtimeMin;
+    }
+
+    public Date getCreatetimeMin() {
+        return createtimeMin;
+    }
+
+    public void setCreatetimeMax(Date createtimeMax) {
+        this.createtimeMax = createtimeMax;
+    }
+
+    public Date getCreatetimeMax() {
+        return createtimeMax;
+    }
+
+    public void setModify(String modify) {
+        this.modify = modify == null ? null : modify.trim();
+    }
+
+    public String getModify() {
+        return modify;
+    }
+
+    public void setModifyMin(String modifyMin) {
+        this.modifyMin = modifyMin == null ? null : modifyMin.trim();
+    }
+
+    public String getModifyMin() {
+        return modifyMin;
+    }
+
+    public void setModifyMax(String modifyMax) {
+        this.modifyMax = modifyMax == null ? null : modifyMax.trim();
+    }
+
+    public String getModifyMax() {
+        return modifyMax;
+    }
+
+    public void setModifyList(List<String> modifyList) {
+        this.modifyList = modifyList;
+    }
+
+    public List<String> getModifyList() {
+        return modifyList;
+    }
+
+    public void setModifytime(Date modifytime) {
+        this.modifytime = modifytime;
+    }
+
+    public Date getModifytime() {
+        return modifytime;
+    }
+
+    public void setModifytimeMin(Date modifytimeMin) {
+        this.modifytimeMin = modifytimeMin;
+    }
+
+    public Date getModifytimeMin() {
+        return modifytimeMin;
+    }
+
+    public void setModifytimeMax(Date modifytimeMax) {
+        this.modifytimeMax = modifytimeMax;
+    }
+
+    public Date getModifytimeMax() {
+        return modifytimeMax;
+    }
+
+    public void setCreatordataid(String creatordataid) {
+        this.creatordataid = creatordataid == null ? null : creatordataid.trim();
+    }
+
+    public String getCreatordataid() {
+        return creatordataid;
+    }
+
+    public void setCreatordataidMin(String creatordataidMin) {
+        this.creatordataidMin = creatordataidMin == null ? null : creatordataidMin.trim();
+    }
+
+    public String getCreatordataidMin() {
+        return creatordataidMin;
+    }
+
+    public void setCreatordataidMax(String creatordataidMax) {
+        this.creatordataidMax = creatordataidMax == null ? null : creatordataidMax.trim();
+    }
+
+    public String getCreatordataidMax() {
+        return creatordataidMax;
+    }
+
+    public void setCreatordataidList(List<String> creatordataidList) {
+        this.creatordataidList = creatordataidList;
+    }
+
+    public List<String> getCreatordataidList() {
+        return creatordataidList;
+    }
+
+    public void setModifydataid(String modifydataid) {
+        this.modifydataid = modifydataid == null ? null : modifydataid.trim();
+    }
+
+    public String getModifydataid() {
+        return modifydataid;
+    }
+
+    public void setModifydataidMin(String modifydataidMin) {
+        this.modifydataidMin = modifydataidMin == null ? null : modifydataidMin.trim();
+    }
+
+    public String getModifydataidMin() {
+        return modifydataidMin;
+    }
+
+    public void setModifydataidMax(String modifydataidMax) {
+        this.modifydataidMax = modifydataidMax == null ? null : modifydataidMax.trim();
+    }
+
+    public String getModifydataidMax() {
+        return modifydataidMax;
+    }
+
+    public void setModifydataidList(List<String> modifydataidList) {
+        this.modifydataidList = modifydataidList;
+    }
+
+    public List<String> getModifydataidList() {
+        return modifydataidList;
     }
 }
