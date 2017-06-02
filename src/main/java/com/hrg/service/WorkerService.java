@@ -4,6 +4,9 @@ import com.hrg.model.Worker;
 import com.hrg.model.WorkerCriteria;
 import com.hrg.util.PageUtil;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created by 82705 on 2017/6/1.
  */
@@ -33,5 +36,21 @@ public interface WorkerService {
      * @throws Exception
      */
     PageUtil<Worker> selectByExample(WorkerCriteria example, PageUtil pageUtil) throws Exception;
+
+    /**
+     * 查询员工详情及未完成任务
+     * @param workerdataid
+     * @return
+     * @throws Exception
+     */
+    Map<String, Object> selectMissionDetail(String workerdataid)throws Exception;
+
+    /**
+     * 查询员工工作日志详情
+     * @param workdataid
+     * @return
+     * @throws Exception
+     */
+    Map<String, Object> selectWorkdataDetail(String workdataid) throws Exception;
 
 }
