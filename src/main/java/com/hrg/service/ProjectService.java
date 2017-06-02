@@ -5,6 +5,7 @@ import com.hrg.model.ProjectCriteria;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by 82705 on 2017/6/1.
@@ -43,4 +44,20 @@ public interface ProjectService {
      * @throws Exception
      */
     List<Project> selectList(ProjectCriteria example) throws Exception;
+
+    /**
+     * 查询项目详情
+     * @param datatid
+     * @return
+     * @throws Exception
+     */
+    Project selectDetail(String datatid)throws Exception;
+
+    /**
+     * 项目详情及以下任务
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    Map<String, Object> selectProjectDetail(String dataid)throws Exception;
 }
