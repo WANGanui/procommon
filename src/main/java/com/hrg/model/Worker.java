@@ -86,6 +86,18 @@ public class Worker implements Serializable {
      */
     private String departmentdataid;
 
+    /**
+     * 状态
+     *             
+     */
+    public static final String STATE = "state";
+
+    /**
+     * 状态
+     *             
+     */
+    private String state;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -214,5 +226,23 @@ public class Worker implements Serializable {
      */
     public void setDepartmentdataid(String departmentdataid) {
         this.departmentdataid = departmentdataid == null ? null : departmentdataid.trim();
+    }
+
+    /**
+     * @return state
+     *         状态
+     *                     
+     */
+    public String getState() {
+        return state;
+    }
+
+    /**
+     * @param state
+     *         状态
+     *                     
+     */
+    public void setState(String state) {
+        this.state = state == null ? null : state.trim();
     }
 }

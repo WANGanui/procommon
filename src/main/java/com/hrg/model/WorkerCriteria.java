@@ -76,6 +76,14 @@ public class WorkerCriteria implements Serializable {
 
     protected List<String> departmentdataidList;
 
+    protected String state;
+
+    protected String stateMin;
+
+    protected String stateMax;
+
+    protected List<String> stateList;
+
     private static final long serialVersionUID = 1L;
 
     public WorkerCriteria() {
@@ -368,5 +376,37 @@ public class WorkerCriteria implements Serializable {
 
     public List<String> getDepartmentdataidList() {
         return departmentdataidList;
+    }
+
+    public void setState(String state) {
+        this.state = state == null ? null : state.trim();
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setStateMin(String stateMin) {
+        this.stateMin = stateMin == null ? null : stateMin.trim();
+    }
+
+    public String getStateMin() {
+        return stateMin;
+    }
+
+    public void setStateMax(String stateMax) {
+        this.stateMax = stateMax == null ? null : stateMax.trim();
+    }
+
+    public String getStateMax() {
+        return stateMax;
+    }
+
+    public void setStateList(List<String> stateList) {
+        this.stateList = stateList;
+    }
+
+    public List<String> getStateList() {
+        return stateList;
     }
 }

@@ -56,6 +56,16 @@ public class Department implements Serializable {
      */
     private String remark;
 
+    /**
+     * 状态
+     */
+    public static final String STATE = "state";
+
+    /**
+     * 状态
+     */
+    private String state;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -136,5 +146,21 @@ public class Department implements Serializable {
      */
     public void setRemark(String remark) {
         this.remark = remark == null ? null : remark.trim();
+    }
+
+    /**
+     * @return state
+     *         状态
+     */
+    public String getState() {
+        return state;
+    }
+
+    /**
+     * @param state
+     *         状态
+     */
+    public void setState(String state) {
+        this.state = state == null ? null : state.trim();
     }
 }
