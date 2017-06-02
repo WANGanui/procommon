@@ -2,6 +2,7 @@ package com.hrg.service;
 
 import com.hrg.model.Worker;
 import com.hrg.model.WorkerCriteria;
+import com.hrg.model.WorkerRole;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
@@ -53,4 +54,12 @@ public interface WorkerService {
      */
     Map<String, Object> selectWorkdataDetail(String workdataid) throws Exception;
 
+    /**
+     * 添加员工
+     * @param worker
+     * @param roleList
+     * @return
+     * @throws Exception
+     */
+    boolean insert(Worker worker, List<WorkerRole> roleList) throws Exception;
 }
