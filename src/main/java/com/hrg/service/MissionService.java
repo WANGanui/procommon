@@ -3,6 +3,7 @@ package com.hrg.service;
 import com.hrg.model.Mission;
 import com.hrg.model.MissionCriteria;
 import com.hrg.model.Worker;
+import com.hrg.util.PageUtil;
 
 import java.util.List;
 
@@ -44,5 +45,14 @@ public interface MissionService {
      * @throws Exception
      */
     boolean update(Mission mission,List<Worker> workerList) throws Exception;
+
+    /**
+     * 分页查询任务列表（）
+     * @param example 条件实体
+     * @param pageUtil 分页实体
+     * @return
+     * @throws Exception
+     */
+    PageUtil<Mission> selectByExample(MissionCriteria example, PageUtil pageUtil) throws Exception;
 
 }
