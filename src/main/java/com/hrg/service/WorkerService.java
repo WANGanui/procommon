@@ -62,4 +62,12 @@ public interface WorkerService {
      * @throws Exception
      */
     boolean insert(Worker worker, List<WorkerRole> roleList) throws Exception;
+
+    /**
+     * 根据id查询对象
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    Worker selectDetail(String dataid) throws Exception;
 }
