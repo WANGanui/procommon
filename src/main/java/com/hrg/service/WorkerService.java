@@ -70,4 +70,12 @@ public interface WorkerService {
      * @throws Exception
      */
     Worker selectDetail(String dataid) throws Exception;
+
+    /**
+     * 修改员工信息
+     * @param worker
+     * @return
+     * @throws Exception
+     */
+    boolean update(Worker worker) throws Exception;
 }

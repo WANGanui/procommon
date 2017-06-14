@@ -56,16 +56,6 @@ public class PreSysRoleRelPermission implements Serializable {
      */
     private String permissiondataid;
 
-    /**
-     * 权限Code
-     */
-    public static final String PERMISSIONCODE = "permissioncode";
-
-    /**
-     * 权限Code
-     */
-    private String permissioncode;
-
     private static final long serialVersionUID = 1L;
 
     /**
@@ -146,21 +136,5 @@ public class PreSysRoleRelPermission implements Serializable {
      */
     public void setPermissiondataid(String permissiondataid) {
         this.permissiondataid = permissiondataid == null ? null : permissiondataid.trim();
-    }
-
-    /**
-     * @return permissioncode
-     *         权限Code
-     */
-    public String getPermissioncode() {
-        return permissioncode;
-    }
-
-    /**
-     * @param permissioncode
-     *         权限Code
-     */
-    public void setPermissioncode(String permissioncode) {
-        this.permissioncode = permissioncode == null ? null : permissioncode.trim();
     }
 }

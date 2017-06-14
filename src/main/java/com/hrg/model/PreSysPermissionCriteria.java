@@ -60,6 +60,14 @@ public class PreSysPermissionCriteria implements Serializable {
 
     protected List<String> permissionurlList;
 
+    protected String contropermission;
+
+    protected String contropermissionMin;
+
+    protected String contropermissionMax;
+
+    protected List<String> contropermissionList;
+
     private static final long serialVersionUID = 1L;
 
     public PreSysPermissionCriteria() {
@@ -288,5 +296,37 @@ public class PreSysPermissionCriteria implements Serializable {
 
     public List<String> getPermissionurlList() {
         return permissionurlList;
+    }
+
+    public void setContropermission(String contropermission) {
+        this.contropermission = contropermission == null ? null : contropermission.trim();
+    }
+
+    public String getContropermission() {
+        return contropermission;
+    }
+
+    public void setContropermissionMin(String contropermissionMin) {
+        this.contropermissionMin = contropermissionMin == null ? null : contropermissionMin.trim();
+    }
+
+    public String getContropermissionMin() {
+        return contropermissionMin;
+    }
+
+    public void setContropermissionMax(String contropermissionMax) {
+        this.contropermissionMax = contropermissionMax == null ? null : contropermissionMax.trim();
+    }
+
+    public String getContropermissionMax() {
+        return contropermissionMax;
+    }
+
+    public void setContropermissionList(List<String> contropermissionList) {
+        this.contropermissionList = contropermissionList;
+    }
+
+    public List<String> getContropermissionList() {
+        return contropermissionList;
     }
 }

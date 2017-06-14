@@ -1,6 +1,7 @@
 package com.hrg.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * hrg_worker
@@ -87,16 +88,24 @@ public class Worker implements Serializable {
     private String departmentdataid;
 
     /**
-     * 状态
-     *             
+     * 状态
      */
     public static final String STATE = "state";
 
     /**
-     * 状态
-     *             
+     * 状态
      */
     private String state;
+
+    /**
+     * 创建时间
+     */
+    public static final String CREATETIME = "createtime";
+
+    /**
+     * 创建时间
+     */
+    private Date createtime;
 
     private static final long serialVersionUID = 1L;
 
@@ -230,8 +239,7 @@ public class Worker implements Serializable {
 
     /**
      * @return state
-     *         状态
-     *                     
+     *         状态
      */
     public String getState() {
         return state;
@@ -239,10 +247,25 @@ public class Worker implements Serializable {
 
     /**
      * @param state
-     *         状态
-     *                     
+     *         状态
      */
     public void setState(String state) {
         this.state = state == null ? null : state.trim();
+    }
+
+    /**
+     * @return createtime
+     *         创建时间
+     */
+    public Date getCreatetime() {
+        return createtime;
+    }
+
+    /**
+     * @param createtime
+     *         创建时间
+     */
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
     }
 }

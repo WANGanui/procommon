@@ -1,6 +1,7 @@
 package com.hrg.model;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 public class WorkerCriteria implements Serializable {
@@ -83,6 +84,12 @@ public class WorkerCriteria implements Serializable {
     protected String stateMax;
 
     protected List<String> stateList;
+
+    protected Date createtime;
+
+    protected Date createtimeMin;
+
+    protected Date createtimeMax;
 
     private static final long serialVersionUID = 1L;
 
@@ -408,5 +415,29 @@ public class WorkerCriteria implements Serializable {
 
     public List<String> getStateList() {
         return stateList;
+    }
+
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
+    }
+
+    public Date getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetimeMin(Date createtimeMin) {
+        this.createtimeMin = createtimeMin;
+    }
+
+    public Date getCreatetimeMin() {
+        return createtimeMin;
+    }
+
+    public void setCreatetimeMax(Date createtimeMax) {
+        this.createtimeMax = createtimeMax;
+    }
+
+    public Date getCreatetimeMax() {
+        return createtimeMax;
     }
 }

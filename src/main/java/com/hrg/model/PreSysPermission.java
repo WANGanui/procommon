@@ -66,6 +66,16 @@ public class PreSysPermission implements Serializable {
      */
     private String permissionurl;
 
+    /**
+     * 操作权限
+     */
+    public static final String CONTROPERMISSION = "contropermission";
+
+    /**
+     * 操作权限
+     */
+    private String contropermission;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -162,5 +172,21 @@ public class PreSysPermission implements Serializable {
      */
     public void setPermissionurl(String permissionurl) {
         this.permissionurl = permissionurl == null ? null : permissionurl.trim();
+    }
+
+    /**
+     * @return contropermission
+     *         操作权限
+     */
+    public String getContropermission() {
+        return contropermission;
+    }
+
+    /**
+     * @param contropermission
+     *         操作权限
+     */
+    public void setContropermission(String contropermission) {
+        this.contropermission = contropermission == null ? null : contropermission.trim();
     }
 }

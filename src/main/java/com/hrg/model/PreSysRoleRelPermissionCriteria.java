@@ -52,14 +52,6 @@ public class PreSysRoleRelPermissionCriteria implements Serializable {
 
     protected List<String> permissiondataidList;
 
-    protected String permissioncode;
-
-    protected String permissioncodeMin;
-
-    protected String permissioncodeMax;
-
-    protected List<String> permissioncodeList;
-
     private static final long serialVersionUID = 1L;
 
     public PreSysRoleRelPermissionCriteria() {
@@ -256,37 +248,5 @@ public class PreSysRoleRelPermissionCriteria implements Serializable {
 
     public List<String> getPermissiondataidList() {
         return permissiondataidList;
-    }
-
-    public void setPermissioncode(String permissioncode) {
-        this.permissioncode = permissioncode == null ? null : permissioncode.trim();
-    }
-
-    public String getPermissioncode() {
-        return permissioncode;
-    }
-
-    public void setPermissioncodeMin(String permissioncodeMin) {
-        this.permissioncodeMin = permissioncodeMin == null ? null : permissioncodeMin.trim();
-    }
-
-    public String getPermissioncodeMin() {
-        return permissioncodeMin;
-    }
-
-    public void setPermissioncodeMax(String permissioncodeMax) {
-        this.permissioncodeMax = permissioncodeMax == null ? null : permissioncodeMax.trim();
-    }
-
-    public String getPermissioncodeMax() {
-        return permissioncodeMax;
-    }
-
-    public void setPermissioncodeList(List<String> permissioncodeList) {
-        this.permissioncodeList = permissioncodeList;
-    }
-
-    public List<String> getPermissioncodeList() {
-        return permissioncodeList;
     }
 }
