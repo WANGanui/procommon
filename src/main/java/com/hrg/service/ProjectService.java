@@ -1,5 +1,6 @@
 package com.hrg.service;
 
+import com.hrg.model.Project;
 import com.hrg.model.ProjectCriteria;
 import com.hrg.util.PageUtil;
 
