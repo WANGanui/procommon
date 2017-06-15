@@ -52,6 +52,14 @@ public class WorkerRolePermissionCriteria implements Serializable {
 
     protected List<String> permissioncodeList;
 
+    protected String permissionurl;
+
+    protected String permissionurlMin;
+
+    protected String permissionurlMax;
+
+    protected List<String> permissionurlList;
+
     private static final long serialVersionUID = 1L;
 
     public WorkerRolePermissionCriteria() {
@@ -248,5 +256,37 @@ public class WorkerRolePermissionCriteria implements Serializable {
 
     public List<String> getPermissioncodeList() {
         return permissioncodeList;
+    }
+
+    public void setPermissionurl(String permissionurl) {
+        this.permissionurl = permissionurl == null ? null : permissionurl.trim();
+    }
+
+    public String getPermissionurl() {
+        return permissionurl;
+    }
+
+    public void setPermissionurlMin(String permissionurlMin) {
+        this.permissionurlMin = permissionurlMin == null ? null : permissionurlMin.trim();
+    }
+
+    public String getPermissionurlMin() {
+        return permissionurlMin;
+    }
+
+    public void setPermissionurlMax(String permissionurlMax) {
+        this.permissionurlMax = permissionurlMax == null ? null : permissionurlMax.trim();
+    }
+
+    public String getPermissionurlMax() {
+        return permissionurlMax;
+    }
+
+    public void setPermissionurlList(List<String> permissionurlList) {
+        this.permissionurlList = permissionurlList;
+    }
+
+    public List<String> getPermissionurlList() {
+        return permissionurlList;
     }
 }

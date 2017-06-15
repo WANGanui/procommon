@@ -56,6 +56,16 @@ public class WorkerRolePermission implements Serializable {
      */
     private String permissioncode;
 
+    /**
+     * 权限url
+     */
+    public static final String PERMISSIONURL = "permissionurl";
+
+    /**
+     * 权限url
+     */
+    private String permissionurl;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -136,5 +146,21 @@ public class WorkerRolePermission implements Serializable {
      */
     public void setPermissioncode(String permissioncode) {
         this.permissioncode = permissioncode == null ? null : permissioncode.trim();
+    }
+
+    /**
+     * @return permissionurl
+     *         权限url
+     */
+    public String getPermissionurl() {
+        return permissionurl;
+    }
+
+    /**
+     * @param permissionurl
+     *         权限url
+     */
+    public void setPermissionurl(String permissionurl) {
+        this.permissionurl = permissionurl == null ? null : permissionurl.trim();
     }
 }
