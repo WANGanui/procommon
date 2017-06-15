@@ -3,7 +3,7 @@ package com.hrg.model;
 import java.io.Serializable;
 import java.util.List;
 
-public class WorkerRolePermissionCriteria implements Serializable {
+public class ModuleRelPermissionCriteria implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -20,13 +20,13 @@ public class WorkerRolePermissionCriteria implements Serializable {
 
     protected List<String> dataidList;
 
-    protected String roleid;
+    protected String moduleid;
 
-    protected String roleidMin;
+    protected String moduleidMin;
 
-    protected String roleidMax;
+    protected String moduleidMax;
 
-    protected List<String> roleidList;
+    protected List<String> moduleidList;
 
     protected String permissionid;
 
@@ -36,14 +36,6 @@ public class WorkerRolePermissionCriteria implements Serializable {
 
     protected List<String> permissionidList;
 
-    protected String moduleurl;
-
-    protected String moduleurlMin;
-
-    protected String moduleurlMax;
-
-    protected List<String> moduleurlList;
-
     protected String options;
 
     protected String optionsMin;
@@ -52,25 +44,9 @@ public class WorkerRolePermissionCriteria implements Serializable {
 
     protected List<String> optionsList;
 
-    protected String modulename;
-
-    protected String modulenameMin;
-
-    protected String modulenameMax;
-
-    protected List<String> modulenameList;
-
-    protected String modulepid;
-
-    protected String modulepidMin;
-
-    protected String modulepidMax;
-
-    protected List<String> modulepidList;
-
     private static final long serialVersionUID = 1L;
 
-    public WorkerRolePermissionCriteria() {
+    public ModuleRelPermissionCriteria() {
          
     }
 
@@ -138,36 +114,36 @@ public class WorkerRolePermissionCriteria implements Serializable {
         return dataidList;
     }
 
-    public void setRoleid(String roleid) {
-        this.roleid = roleid == null ? null : roleid.trim();
+    public void setModuleid(String moduleid) {
+        this.moduleid = moduleid == null ? null : moduleid.trim();
     }
 
-    public String getRoleid() {
-        return roleid;
+    public String getModuleid() {
+        return moduleid;
     }
 
-    public void setRoleidMin(String roleidMin) {
-        this.roleidMin = roleidMin == null ? null : roleidMin.trim();
+    public void setModuleidMin(String moduleidMin) {
+        this.moduleidMin = moduleidMin == null ? null : moduleidMin.trim();
     }
 
-    public String getRoleidMin() {
-        return roleidMin;
+    public String getModuleidMin() {
+        return moduleidMin;
     }
 
-    public void setRoleidMax(String roleidMax) {
-        this.roleidMax = roleidMax == null ? null : roleidMax.trim();
+    public void setModuleidMax(String moduleidMax) {
+        this.moduleidMax = moduleidMax == null ? null : moduleidMax.trim();
     }
 
-    public String getRoleidMax() {
-        return roleidMax;
+    public String getModuleidMax() {
+        return moduleidMax;
     }
 
-    public void setRoleidList(List<String> roleidList) {
-        this.roleidList = roleidList;
+    public void setModuleidList(List<String> moduleidList) {
+        this.moduleidList = moduleidList;
     }
 
-    public List<String> getRoleidList() {
-        return roleidList;
+    public List<String> getModuleidList() {
+        return moduleidList;
     }
 
     public void setPermissionid(String permissionid) {
@@ -202,38 +178,6 @@ public class WorkerRolePermissionCriteria implements Serializable {
         return permissionidList;
     }
 
-    public void setModuleurl(String moduleurl) {
-        this.moduleurl = moduleurl == null ? null : moduleurl.trim();
-    }
-
-    public String getModuleurl() {
-        return moduleurl;
-    }
-
-    public void setModuleurlMin(String moduleurlMin) {
-        this.moduleurlMin = moduleurlMin == null ? null : moduleurlMin.trim();
-    }
-
-    public String getModuleurlMin() {
-        return moduleurlMin;
-    }
-
-    public void setModuleurlMax(String moduleurlMax) {
-        this.moduleurlMax = moduleurlMax == null ? null : moduleurlMax.trim();
-    }
-
-    public String getModuleurlMax() {
-        return moduleurlMax;
-    }
-
-    public void setModuleurlList(List<String> moduleurlList) {
-        this.moduleurlList = moduleurlList;
-    }
-
-    public List<String> getModuleurlList() {
-        return moduleurlList;
-    }
-
     public void setOptions(String options) {
         this.options = options == null ? null : options.trim();
     }
@@ -264,69 +208,5 @@ public class WorkerRolePermissionCriteria implements Serializable {
 
     public List<String> getOptionsList() {
         return optionsList;
-    }
-
-    public void setModulename(String modulename) {
-        this.modulename = modulename == null ? null : modulename.trim();
-    }
-
-    public String getModulename() {
-        return modulename;
-    }
-
-    public void setModulenameMin(String modulenameMin) {
-        this.modulenameMin = modulenameMin == null ? null : modulenameMin.trim();
-    }
-
-    public String getModulenameMin() {
-        return modulenameMin;
-    }
-
-    public void setModulenameMax(String modulenameMax) {
-        this.modulenameMax = modulenameMax == null ? null : modulenameMax.trim();
-    }
-
-    public String getModulenameMax() {
-        return modulenameMax;
-    }
-
-    public void setModulenameList(List<String> modulenameList) {
-        this.modulenameList = modulenameList;
-    }
-
-    public List<String> getModulenameList() {
-        return modulenameList;
-    }
-
-    public void setModulepid(String modulepid) {
-        this.modulepid = modulepid == null ? null : modulepid.trim();
-    }
-
-    public String getModulepid() {
-        return modulepid;
-    }
-
-    public void setModulepidMin(String modulepidMin) {
-        this.modulepidMin = modulepidMin == null ? null : modulepidMin.trim();
-    }
-
-    public String getModulepidMin() {
-        return modulepidMin;
-    }
-
-    public void setModulepidMax(String modulepidMax) {
-        this.modulepidMax = modulepidMax == null ? null : modulepidMax.trim();
-    }
-
-    public String getModulepidMax() {
-        return modulepidMax;
-    }
-
-    public void setModulepidList(List<String> modulepidList) {
-        this.modulepidList = modulepidList;
-    }
-
-    public List<String> getModulepidList() {
-        return modulepidList;
     }
 }

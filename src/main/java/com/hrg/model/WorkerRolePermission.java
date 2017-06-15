@@ -17,24 +17,14 @@ public class WorkerRolePermission implements Serializable {
     private String dataid;
 
     /**
-     * 员工角色id
+     * 角色id
      */
     public static final String ROLEID = "roleid";
 
     /**
-     * 员工角色id
+     * 角色id
      */
     private String roleid;
-
-    /**
-     * 父级角色id
-     */
-    public static final String PARENTROLEID = "parentroleid";
-
-    /**
-     * 父级角色id
-     */
-    private String parentroleid;
 
     /**
      * 权限id
@@ -47,24 +37,44 @@ public class WorkerRolePermission implements Serializable {
     private String permissionid;
 
     /**
-     * 权限code
+     * 权限url
      */
-    public static final String PERMISSIONCODE = "permissioncode";
-
-    /**
-     * 权限code
-     */
-    private String permissioncode;
+    public static final String MODULEURL = "moduleurl";
 
     /**
      * 权限url
      */
-    public static final String PERMISSIONURL = "permissionurl";
+    private String moduleurl;
 
     /**
-     * 权限url
+     * 操作权限
      */
-    private String permissionurl;
+    public static final String OPTIONS = "options";
+
+    /**
+     * 操作权限
+     */
+    private String options;
+
+    /**
+     * 模块名称
+     */
+    public static final String MODULENAME = "modulename";
+
+    /**
+     * 模块名称
+     */
+    private String modulename;
+
+    /**
+     * 模块子id
+     */
+    public static final String MODULEPID = "modulepid";
+
+    /**
+     * 模块子id
+     */
+    private String modulepid;
 
     private static final long serialVersionUID = 1L;
 
@@ -86,7 +96,7 @@ public class WorkerRolePermission implements Serializable {
 
     /**
      * @return roleid
-     *         员工角色id
+     *         角色id
      */
     public String getRoleid() {
         return roleid;
@@ -94,26 +104,10 @@ public class WorkerRolePermission implements Serializable {
 
     /**
      * @param roleid
-     *         员工角色id
+     *         角色id
      */
     public void setRoleid(String roleid) {
         this.roleid = roleid == null ? null : roleid.trim();
-    }
-
-    /**
-     * @return parentroleid
-     *         父级角色id
-     */
-    public String getParentroleid() {
-        return parentroleid;
-    }
-
-    /**
-     * @param parentroleid
-     *         父级角色id
-     */
-    public void setParentroleid(String parentroleid) {
-        this.parentroleid = parentroleid == null ? null : parentroleid.trim();
     }
 
     /**
@@ -133,34 +127,66 @@ public class WorkerRolePermission implements Serializable {
     }
 
     /**
-     * @return permissioncode
-     *         权限code
-     */
-    public String getPermissioncode() {
-        return permissioncode;
-    }
-
-    /**
-     * @param permissioncode
-     *         权限code
-     */
-    public void setPermissioncode(String permissioncode) {
-        this.permissioncode = permissioncode == null ? null : permissioncode.trim();
-    }
-
-    /**
-     * @return permissionurl
+     * @return moduleurl
      *         权限url
      */
-    public String getPermissionurl() {
-        return permissionurl;
+    public String getModuleurl() {
+        return moduleurl;
     }
 
     /**
-     * @param permissionurl
+     * @param moduleurl
      *         权限url
      */
-    public void setPermissionurl(String permissionurl) {
-        this.permissionurl = permissionurl == null ? null : permissionurl.trim();
+    public void setModuleurl(String moduleurl) {
+        this.moduleurl = moduleurl == null ? null : moduleurl.trim();
+    }
+
+    /**
+     * @return options
+     *         操作权限
+     */
+    public String getOptions() {
+        return options;
+    }
+
+    /**
+     * @param options
+     *         操作权限
+     */
+    public void setOptions(String options) {
+        this.options = options == null ? null : options.trim();
+    }
+
+    /**
+     * @return modulename
+     *         模块名称
+     */
+    public String getModulename() {
+        return modulename;
+    }
+
+    /**
+     * @param modulename
+     *         模块名称
+     */
+    public void setModulename(String modulename) {
+        this.modulename = modulename == null ? null : modulename.trim();
+    }
+
+    /**
+     * @return modulepid
+     *         模块子id
+     */
+    public String getModulepid() {
+        return modulepid;
+    }
+
+    /**
+     * @param modulepid
+     *         模块子id
+     */
+    public void setModulepid(String modulepid) {
+        this.modulepid = modulepid == null ? null : modulepid.trim();
     }
 }
