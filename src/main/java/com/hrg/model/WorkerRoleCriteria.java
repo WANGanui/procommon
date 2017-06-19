@@ -28,29 +28,13 @@ public class WorkerRoleCriteria implements Serializable {
 
     protected List<String> workerdataidList;
 
-    protected String preroleid;
+    protected String roleid;
 
-    protected String preroleidMin;
+    protected String roleidMin;
 
-    protected String preroleidMax;
+    protected String roleidMax;
 
-    protected List<String> preroleidList;
-
-    protected String parentroleid;
-
-    protected String parentroleidMin;
-
-    protected String parentroleidMax;
-
-    protected List<String> parentroleidList;
-
-    protected String rolename;
-
-    protected String rolenameMin;
-
-    protected String rolenameMax;
-
-    protected List<String> rolenameList;
+    protected List<String> roleidList;
 
     private static final long serialVersionUID = 1L;
 
@@ -154,99 +138,35 @@ public class WorkerRoleCriteria implements Serializable {
         return workerdataidList;
     }
 
-    public void setPreroleid(String preroleid) {
-        this.preroleid = preroleid == null ? null : preroleid.trim();
+    public void setRoleid(String roleid) {
+        this.roleid = roleid == null ? null : roleid.trim();
     }
 
-    public String getPreroleid() {
-        return preroleid;
+    public String getRoleid() {
+        return roleid;
     }
 
-    public void setPreroleidMin(String preroleidMin) {
-        this.preroleidMin = preroleidMin == null ? null : preroleidMin.trim();
+    public void setRoleidMin(String roleidMin) {
+        this.roleidMin = roleidMin == null ? null : roleidMin.trim();
     }
 
-    public String getPreroleidMin() {
-        return preroleidMin;
+    public String getRoleidMin() {
+        return roleidMin;
     }
 
-    public void setPreroleidMax(String preroleidMax) {
-        this.preroleidMax = preroleidMax == null ? null : preroleidMax.trim();
+    public void setRoleidMax(String roleidMax) {
+        this.roleidMax = roleidMax == null ? null : roleidMax.trim();
     }
 
-    public String getPreroleidMax() {
-        return preroleidMax;
+    public String getRoleidMax() {
+        return roleidMax;
     }
 
-    public void setPreroleidList(List<String> preroleidList) {
-        this.preroleidList = preroleidList;
+    public void setRoleidList(List<String> roleidList) {
+        this.roleidList = roleidList;
     }
 
-    public List<String> getPreroleidList() {
-        return preroleidList;
-    }
-
-    public void setParentroleid(String parentroleid) {
-        this.parentroleid = parentroleid == null ? null : parentroleid.trim();
-    }
-
-    public String getParentroleid() {
-        return parentroleid;
-    }
-
-    public void setParentroleidMin(String parentroleidMin) {
-        this.parentroleidMin = parentroleidMin == null ? null : parentroleidMin.trim();
-    }
-
-    public String getParentroleidMin() {
-        return parentroleidMin;
-    }
-
-    public void setParentroleidMax(String parentroleidMax) {
-        this.parentroleidMax = parentroleidMax == null ? null : parentroleidMax.trim();
-    }
-
-    public String getParentroleidMax() {
-        return parentroleidMax;
-    }
-
-    public void setParentroleidList(List<String> parentroleidList) {
-        this.parentroleidList = parentroleidList;
-    }
-
-    public List<String> getParentroleidList() {
-        return parentroleidList;
-    }
-
-    public void setRolename(String rolename) {
-        this.rolename = rolename == null ? null : rolename.trim();
-    }
-
-    public String getRolename() {
-        return rolename;
-    }
-
-    public void setRolenameMin(String rolenameMin) {
-        this.rolenameMin = rolenameMin == null ? null : rolenameMin.trim();
-    }
-
-    public String getRolenameMin() {
-        return rolenameMin;
-    }
-
-    public void setRolenameMax(String rolenameMax) {
-        this.rolenameMax = rolenameMax == null ? null : rolenameMax.trim();
-    }
-
-    public String getRolenameMax() {
-        return rolenameMax;
-    }
-
-    public void setRolenameList(List<String> rolenameList) {
-        this.rolenameList = rolenameList;
-    }
-
-    public List<String> getRolenameList() {
-        return rolenameList;
+    public List<String> getRoleidList() {
+        return roleidList;
     }
 }

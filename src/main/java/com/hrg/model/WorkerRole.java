@@ -17,44 +17,24 @@ public class WorkerRole implements Serializable {
     private String dataid;
 
     /**
-     * 员工id
+     * 员工ID
      */
     public static final String WORKERDATAID = "workerdataid";
 
     /**
-     * 员工id
+     * 员工ID
      */
     private String workerdataid;
 
     /**
-     * 预定义角色id
+     * 角色ID
      */
-    public static final String PREROLEID = "preroleid";
+    public static final String ROLEID = "roleid";
 
     /**
-     * 预定义角色id
+     * 角色ID
      */
-    private String preroleid;
-
-    /**
-     * 父级角色id
-     */
-    public static final String PARENTROLEID = "parentroleid";
-
-    /**
-     * 父级角色id
-     */
-    private String parentroleid;
-
-    /**
-     * 角色名称
-     */
-    public static final String ROLENAME = "rolename";
-
-    /**
-     * 角色名称
-     */
-    private String rolename;
+    private String roleid;
 
     private static final long serialVersionUID = 1L;
 
@@ -76,7 +56,7 @@ public class WorkerRole implements Serializable {
 
     /**
      * @return workerdataid
-     *         员工id
+     *         员工ID
      */
     public String getWorkerdataid() {
         return workerdataid;
@@ -84,57 +64,25 @@ public class WorkerRole implements Serializable {
 
     /**
      * @param workerdataid
-     *         员工id
+     *         员工ID
      */
     public void setWorkerdataid(String workerdataid) {
         this.workerdataid = workerdataid == null ? null : workerdataid.trim();
     }
 
     /**
-     * @return preroleid
-     *         预定义角色id
+     * @return roleid
+     *         角色ID
      */
-    public String getPreroleid() {
-        return preroleid;
+    public String getRoleid() {
+        return roleid;
     }
 
     /**
-     * @param preroleid
-     *         预定义角色id
+     * @param roleid
+     *         角色ID
      */
-    public void setPreroleid(String preroleid) {
-        this.preroleid = preroleid == null ? null : preroleid.trim();
-    }
-
-    /**
-     * @return parentroleid
-     *         父级角色id
-     */
-    public String getParentroleid() {
-        return parentroleid;
-    }
-
-    /**
-     * @param parentroleid
-     *         父级角色id
-     */
-    public void setParentroleid(String parentroleid) {
-        this.parentroleid = parentroleid == null ? null : parentroleid.trim();
-    }
-
-    /**
-     * @return rolename
-     *         角色名称
-     */
-    public String getRolename() {
-        return rolename;
-    }
-
-    /**
-     * @param rolename
-     *         角色名称
-     */
-    public void setRolename(String rolename) {
-        this.rolename = rolename == null ? null : rolename.trim();
+    public void setRoleid(String roleid) {
+        this.roleid = roleid == null ? null : roleid.trim();
     }
 }

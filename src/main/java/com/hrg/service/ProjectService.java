@@ -35,7 +35,7 @@ public interface ProjectService {
      * @return
      * @throws Exception
      */
-    PageUtil<Project> selectByExample(ProjectCriteria example,PageUtil pageUtil) throws Exception;
+    PageUtil<Project> selectByExample(ProjectCriteria example, PageUtil pageUtil) throws Exception;
 
     /**
      * 条件查询列表

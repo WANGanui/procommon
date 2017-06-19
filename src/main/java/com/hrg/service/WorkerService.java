@@ -78,4 +78,12 @@ public interface WorkerService {
      * @throws Exception
      */
     boolean update(Worker worker) throws Exception;
+
+    /**
+     * 查询员工模块和权限
+     * @param workerdataid
+     * @return
+     * @throws Exception
+     */
+    Map<String,Object> selectModuleAndPermission(String workerdataid) throws Exception;
 }
