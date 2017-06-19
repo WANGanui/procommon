@@ -86,4 +86,12 @@ public interface WorkerService {
      * @throws Exception
      */
     Map<String,Object> selectModuleAndPermission(String workerdataid) throws Exception;
+
+    /**
+     * 查询列表
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    List<Worker> selectList(WorkerCriteria example) throws Exception;
 }

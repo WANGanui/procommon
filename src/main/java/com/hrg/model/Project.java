@@ -187,6 +187,16 @@ public class Project implements Serializable {
      */
     private String modifydataid;
 
+    /**
+     * 进度
+     */
+    public static final String PROGRESS = "progress";
+
+    /**
+     * 进度
+     */
+    private String progress;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -475,5 +485,21 @@ public class Project implements Serializable {
      */
     public void setModifydataid(String modifydataid) {
         this.modifydataid = modifydataid == null ? null : modifydataid.trim();
+    }
+
+    /**
+     * @return progress
+     *         进度
+     */
+    public String getProgress() {
+        return progress;
+    }
+
+    /**
+     * @param progress
+     *         进度
+     */
+    public void setProgress(String progress) {
+        this.progress = progress == null ? null : progress.trim();
     }
 }

@@ -147,6 +147,14 @@ public class ProjectCriteria implements Serializable {
 
     protected List<String> modifydataidList;
 
+    protected String progress;
+
+    protected String progressMin;
+
+    protected String progressMax;
+
+    protected List<String> progressList;
+
     private static final long serialVersionUID = 1L;
 
     public ProjectCriteria() {
@@ -719,5 +727,37 @@ public class ProjectCriteria implements Serializable {
 
     public List<String> getModifydataidList() {
         return modifydataidList;
+    }
+
+    public void setProgress(String progress) {
+        this.progress = progress == null ? null : progress.trim();
+    }
+
+    public String getProgress() {
+        return progress;
+    }
+
+    public void setProgressMin(String progressMin) {
+        this.progressMin = progressMin == null ? null : progressMin.trim();
+    }
+
+    public String getProgressMin() {
+        return progressMin;
+    }
+
+    public void setProgressMax(String progressMax) {
+        this.progressMax = progressMax == null ? null : progressMax.trim();
+    }
+
+    public String getProgressMax() {
+        return progressMax;
+    }
+
+    public void setProgressList(List<String> progressList) {
+        this.progressList = progressList;
+    }
+
+    public List<String> getProgressList() {
+        return progressList;
     }
 }
