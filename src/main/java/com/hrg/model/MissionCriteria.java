@@ -171,6 +171,22 @@ public class MissionCriteria implements Serializable {
 
     protected List<String> headernameList;
 
+    protected String auditorid;
+
+    protected String auditoridMin;
+
+    protected String auditoridMax;
+
+    protected List<String> auditoridList;
+
+    protected String auditorname;
+
+    protected String auditornameMin;
+
+    protected String auditornameMax;
+
+    protected List<String> auditornameList;
+
     private static final long serialVersionUID = 1L;
 
     public MissionCriteria() {
@@ -839,5 +855,69 @@ public class MissionCriteria implements Serializable {
 
     public List<String> getHeadernameList() {
         return headernameList;
+    }
+
+    public void setAuditorid(String auditorid) {
+        this.auditorid = auditorid == null ? null : auditorid.trim();
+    }
+
+    public String getAuditorid() {
+        return auditorid;
+    }
+
+    public void setAuditoridMin(String auditoridMin) {
+        this.auditoridMin = auditoridMin == null ? null : auditoridMin.trim();
+    }
+
+    public String getAuditoridMin() {
+        return auditoridMin;
+    }
+
+    public void setAuditoridMax(String auditoridMax) {
+        this.auditoridMax = auditoridMax == null ? null : auditoridMax.trim();
+    }
+
+    public String getAuditoridMax() {
+        return auditoridMax;
+    }
+
+    public void setAuditoridList(List<String> auditoridList) {
+        this.auditoridList = auditoridList;
+    }
+
+    public List<String> getAuditoridList() {
+        return auditoridList;
+    }
+
+    public void setAuditorname(String auditorname) {
+        this.auditorname = auditorname == null ? null : auditorname.trim();
+    }
+
+    public String getAuditorname() {
+        return auditorname;
+    }
+
+    public void setAuditornameMin(String auditornameMin) {
+        this.auditornameMin = auditornameMin == null ? null : auditornameMin.trim();
+    }
+
+    public String getAuditornameMin() {
+        return auditornameMin;
+    }
+
+    public void setAuditornameMax(String auditornameMax) {
+        this.auditornameMax = auditornameMax == null ? null : auditornameMax.trim();
+    }
+
+    public String getAuditornameMax() {
+        return auditornameMax;
+    }
+
+    public void setAuditornameList(List<String> auditornameList) {
+        this.auditornameList = auditornameList;
+    }
+
+    public List<String> getAuditornameList() {
+        return auditornameList;
     }
 }

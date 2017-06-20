@@ -217,6 +217,26 @@ public class Mission implements Serializable {
      */
     private String headername;
 
+    /**
+     * 审核人id
+     */
+    public static final String AUDITORID = "auditorid";
+
+    /**
+     * 审核人id
+     */
+    private String auditorid;
+
+    /**
+     * 审核人名称
+     */
+    public static final String AUDITORNAME = "auditorname";
+
+    /**
+     * 审核人名称
+     */
+    private String auditorname;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -553,5 +573,37 @@ public class Mission implements Serializable {
      */
     public void setHeadername(String headername) {
         this.headername = headername == null ? null : headername.trim();
+    }
+
+    /**
+     * @return auditorid
+     *         审核人id
+     */
+    public String getAuditorid() {
+        return auditorid;
+    }
+
+    /**
+     * @param auditorid
+     *         审核人id
+     */
+    public void setAuditorid(String auditorid) {
+        this.auditorid = auditorid == null ? null : auditorid.trim();
+    }
+
+    /**
+     * @return auditorname
+     *         审核人名称
+     */
+    public String getAuditorname() {
+        return auditorname;
+    }
+
+    /**
+     * @param auditorname
+     *         审核人名称
+     */
+    public void setAuditorname(String auditorname) {
+        this.auditorname = auditorname == null ? null : auditorname.trim();
     }
 }
