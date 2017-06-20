@@ -187,6 +187,36 @@ public class Mission implements Serializable {
      */
     private Date modifytime;
 
+    /**
+     * 类型（0.项目任务，1.个人任务）
+     */
+    public static final String TYPE = "type";
+
+    /**
+     * 类型（0.项目任务，1.个人任务）
+     */
+    private String type;
+
+    /**
+     * 责任人ID
+     */
+    public static final String HEADERID = "headerid";
+
+    /**
+     * 责任人ID
+     */
+    private String headerid;
+
+    /**
+     * 责任人名称
+     */
+    public static final String HEADERNAME = "headername";
+
+    /**
+     * 责任人名称
+     */
+    private String headername;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -475,5 +505,53 @@ public class Mission implements Serializable {
      */
     public void setModifytime(Date modifytime) {
         this.modifytime = modifytime;
+    }
+
+    /**
+     * @return type
+     *         类型（0.项目任务，1.个人任务）
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
+     * @param type
+     *         类型（0.项目任务，1.个人任务）
+     */
+    public void setType(String type) {
+        this.type = type == null ? null : type.trim();
+    }
+
+    /**
+     * @return headerid
+     *         责任人ID
+     */
+    public String getHeaderid() {
+        return headerid;
+    }
+
+    /**
+     * @param headerid
+     *         责任人ID
+     */
+    public void setHeaderid(String headerid) {
+        this.headerid = headerid == null ? null : headerid.trim();
+    }
+
+    /**
+     * @return headername
+     *         责任人名称
+     */
+    public String getHeadername() {
+        return headername;
+    }
+
+    /**
+     * @param headername
+     *         责任人名称
+     */
+    public void setHeadername(String headername) {
+        this.headername = headername == null ? null : headername.trim();
     }
 }

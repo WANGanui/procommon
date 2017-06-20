@@ -147,6 +147,30 @@ public class MissionCriteria implements Serializable {
 
     protected Date modifytimeMax;
 
+    protected String type;
+
+    protected String typeMin;
+
+    protected String typeMax;
+
+    protected List<String> typeList;
+
+    protected String headerid;
+
+    protected String headeridMin;
+
+    protected String headeridMax;
+
+    protected List<String> headeridList;
+
+    protected String headername;
+
+    protected String headernameMin;
+
+    protected String headernameMax;
+
+    protected List<String> headernameList;
+
     private static final long serialVersionUID = 1L;
 
     public MissionCriteria() {
@@ -719,5 +743,101 @@ public class MissionCriteria implements Serializable {
 
     public Date getModifytimeMax() {
         return modifytimeMax;
+    }
+
+    public void setType(String type) {
+        this.type = type == null ? null : type.trim();
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setTypeMin(String typeMin) {
+        this.typeMin = typeMin == null ? null : typeMin.trim();
+    }
+
+    public String getTypeMin() {
+        return typeMin;
+    }
+
+    public void setTypeMax(String typeMax) {
+        this.typeMax = typeMax == null ? null : typeMax.trim();
+    }
+
+    public String getTypeMax() {
+        return typeMax;
+    }
+
+    public void setTypeList(List<String> typeList) {
+        this.typeList = typeList;
+    }
+
+    public List<String> getTypeList() {
+        return typeList;
+    }
+
+    public void setHeaderid(String headerid) {
+        this.headerid = headerid == null ? null : headerid.trim();
+    }
+
+    public String getHeaderid() {
+        return headerid;
+    }
+
+    public void setHeaderidMin(String headeridMin) {
+        this.headeridMin = headeridMin == null ? null : headeridMin.trim();
+    }
+
+    public String getHeaderidMin() {
+        return headeridMin;
+    }
+
+    public void setHeaderidMax(String headeridMax) {
+        this.headeridMax = headeridMax == null ? null : headeridMax.trim();
+    }
+
+    public String getHeaderidMax() {
+        return headeridMax;
+    }
+
+    public void setHeaderidList(List<String> headeridList) {
+        this.headeridList = headeridList;
+    }
+
+    public List<String> getHeaderidList() {
+        return headeridList;
+    }
+
+    public void setHeadername(String headername) {
+        this.headername = headername == null ? null : headername.trim();
+    }
+
+    public String getHeadername() {
+        return headername;
+    }
+
+    public void setHeadernameMin(String headernameMin) {
+        this.headernameMin = headernameMin == null ? null : headernameMin.trim();
+    }
+
+    public String getHeadernameMin() {
+        return headernameMin;
+    }
+
+    public void setHeadernameMax(String headernameMax) {
+        this.headernameMax = headernameMax == null ? null : headernameMax.trim();
+    }
+
+    public String getHeadernameMax() {
+        return headernameMax;
+    }
+
+    public void setHeadernameList(List<String> headernameList) {
+        this.headernameList = headernameList;
+    }
+
+    public List<String> getHeadernameList() {
+        return headernameList;
     }
 }
