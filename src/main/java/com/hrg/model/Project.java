@@ -88,6 +88,16 @@ public class Project implements Serializable {
     private String leader;
 
     /**
+     * 项目内容
+     */
+    public static final String CONTECT = "contect";
+
+    /**
+     * 项目内容
+     */
+    private String contect;
+
+    /**
      * 状态
      */
     public static final String STATE = "state";
@@ -186,6 +196,16 @@ public class Project implements Serializable {
      * 进度
      */
     private String progress;
+
+    /**
+     * 项目成员
+     */
+    public static final String MEMBER = "member";
+
+    /**
+     * 项目成员
+     */
+    private String member;
 
     private static final long serialVersionUID = 1L;
 
@@ -315,6 +335,22 @@ public class Project implements Serializable {
      */
     public void setLeader(String leader) {
         this.leader = leader == null ? null : leader.trim();
+    }
+
+    /**
+     * @return contect
+     *         项目内容
+     */
+    public String getContect() {
+        return contect;
+    }
+
+    /**
+     * @param contect
+     *         项目内容
+     */
+    public void setContect(String contect) {
+        this.contect = contect == null ? null : contect.trim();
     }
 
     /**
@@ -475,5 +511,21 @@ public class Project implements Serializable {
      */
     public void setProgress(String progress) {
         this.progress = progress == null ? null : progress.trim();
+    }
+
+    /**
+     * @return member
+     *         项目成员
+     */
+    public String getMember() {
+        return member;
+    }
+
+    /**
+     * @param member
+     *         项目成员
+     */
+    public void setMember(String member) {
+        this.member = member == null ? null : member.trim();
     }
 }

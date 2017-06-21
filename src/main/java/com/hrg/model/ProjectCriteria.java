@@ -73,6 +73,14 @@ public class ProjectCriteria implements Serializable {
 
     protected List<String> leaderList;
 
+    protected String contect;
+
+    protected String contectMin;
+
+    protected String contectMax;
+
+    protected List<String> contectList;
+
     protected String state;
 
     protected String stateMin;
@@ -146,6 +154,14 @@ public class ProjectCriteria implements Serializable {
     protected String progressMax;
 
     protected List<String> progressList;
+
+    protected String member;
+
+    protected String memberMin;
+
+    protected String memberMax;
+
+    protected List<String> memberList;
 
     private static final long serialVersionUID = 1L;
 
@@ -423,6 +439,38 @@ public class ProjectCriteria implements Serializable {
 
     public List<String> getLeaderList() {
         return leaderList;
+    }
+
+    public void setContect(String contect) {
+        this.contect = contect == null ? null : contect.trim();
+    }
+
+    public String getContect() {
+        return contect;
+    }
+
+    public void setContectMin(String contectMin) {
+        this.contectMin = contectMin == null ? null : contectMin.trim();
+    }
+
+    public String getContectMin() {
+        return contectMin;
+    }
+
+    public void setContectMax(String contectMax) {
+        this.contectMax = contectMax == null ? null : contectMax.trim();
+    }
+
+    public String getContectMax() {
+        return contectMax;
+    }
+
+    public void setContectList(List<String> contectList) {
+        this.contectList = contectList;
+    }
+
+    public List<String> getContectList() {
+        return contectList;
     }
 
     public void setState(String state) {
@@ -719,5 +767,37 @@ public class ProjectCriteria implements Serializable {
 
     public List<String> getProgressList() {
         return progressList;
+    }
+
+    public void setMember(String member) {
+        this.member = member == null ? null : member.trim();
+    }
+
+    public String getMember() {
+        return member;
+    }
+
+    public void setMemberMin(String memberMin) {
+        this.memberMin = memberMin == null ? null : memberMin.trim();
+    }
+
+    public String getMemberMin() {
+        return memberMin;
+    }
+
+    public void setMemberMax(String memberMax) {
+        this.memberMax = memberMax == null ? null : memberMax.trim();
+    }
+
+    public String getMemberMax() {
+        return memberMax;
+    }
+
+    public void setMemberList(List<String> memberList) {
+        this.memberList = memberList;
+    }
+
+    public List<String> getMemberList() {
+        return memberList;
     }
 }
