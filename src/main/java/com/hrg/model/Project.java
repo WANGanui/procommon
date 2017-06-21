@@ -88,16 +88,6 @@ public class Project implements Serializable {
     private String leader;
 
     /**
-     * 项目内容
-     */
-    public static final String CONTECT = "contect";
-
-    /**
-     * 项目内容
-     */
-    private String contect;
-
-    /**
      * 状态
      */
     public static final String STATE = "state";
@@ -325,22 +315,6 @@ public class Project implements Serializable {
      */
     public void setLeader(String leader) {
         this.leader = leader == null ? null : leader.trim();
-    }
-
-    /**
-     * @return contect
-     *         项目内容
-     */
-    public String getContect() {
-        return contect;
-    }
-
-    /**
-     * @param contect
-     *         项目内容
-     */
-    public void setContect(String contect) {
-        this.contect = contect == null ? null : contect.trim();
     }
 
     /**

@@ -73,14 +73,6 @@ public class ProjectCriteria implements Serializable {
 
     protected List<String> leaderList;
 
-    protected String contect;
-
-    protected String contectMin;
-
-    protected String contectMax;
-
-    protected List<String> contectList;
-
     protected String state;
 
     protected String stateMin;
@@ -431,38 +423,6 @@ public class ProjectCriteria implements Serializable {
 
     public List<String> getLeaderList() {
         return leaderList;
-    }
-
-    public void setContect(String contect) {
-        this.contect = contect == null ? null : contect.trim();
-    }
-
-    public String getContect() {
-        return contect;
-    }
-
-    public void setContectMin(String contectMin) {
-        this.contectMin = contectMin == null ? null : contectMin.trim();
-    }
-
-    public String getContectMin() {
-        return contectMin;
-    }
-
-    public void setContectMax(String contectMax) {
-        this.contectMax = contectMax == null ? null : contectMax.trim();
-    }
-
-    public String getContectMax() {
-        return contectMax;
-    }
-
-    public void setContectList(List<String> contectList) {
-        this.contectList = contectList;
-    }
-
-    public List<String> getContectList() {
-        return contectList;
     }
 
     public void setState(String state) {
