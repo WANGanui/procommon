@@ -4,6 +4,8 @@ import com.hrg.model.Notice;
 import com.hrg.model.NoticeCriteria;
 import com.hrg.util.PageUtil;
 
+import java.util.List;
+
 /**
  * Created by 82705 on 2017/6/1.
  */
@@ -41,4 +43,11 @@ public interface NoticeService {
      * @throws Exception
      */
     PageUtil selectByExample(NoticeCriteria example, PageUtil pageUtil) throws Exception;
+
+    /**
+     * 公告列表
+     * @param example
+     * @return
+     */
+    List<Notice> selectList(NoticeCriteria example) throws Exception;
 }

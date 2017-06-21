@@ -87,6 +87,16 @@ public class Notice implements Serializable {
      */
     private Date time;
 
+    /**
+     * 公告标题
+     */
+    public static final String TITLE = "title";
+
+    /**
+     * 公告标题
+     */
+    private String title;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -215,5 +225,21 @@ public class Notice implements Serializable {
      */
     public void setTime(Date time) {
         this.time = time;
+    }
+
+    /**
+     * @return title
+     *         公告标题
+     */
+    public String getTitle() {
+        return title;
+    }
+
+    /**
+     * @param title
+     *         公告标题
+     */
+    public void setTitle(String title) {
+        this.title = title == null ? null : title.trim();
     }
 }

@@ -73,6 +73,14 @@ public class NoticeCriteria implements Serializable {
 
     protected Date timeMax;
 
+    protected String title;
+
+    protected String titleMin;
+
+    protected String titleMax;
+
+    protected List<String> titleList;
+
     private static final long serialVersionUID = 1L;
 
     public NoticeCriteria() {
@@ -349,5 +357,37 @@ public class NoticeCriteria implements Serializable {
 
     public Date getTimeMax() {
         return timeMax;
+    }
+
+    public void setTitle(String title) {
+        this.title = title == null ? null : title.trim();
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitleMin(String titleMin) {
+        this.titleMin = titleMin == null ? null : titleMin.trim();
+    }
+
+    public String getTitleMin() {
+        return titleMin;
+    }
+
+    public void setTitleMax(String titleMax) {
+        this.titleMax = titleMax == null ? null : titleMax.trim();
+    }
+
+    public String getTitleMax() {
+        return titleMax;
+    }
+
+    public void setTitleList(List<String> titleList) {
+        this.titleList = titleList;
+    }
+
+    public List<String> getTitleList() {
+        return titleList;
     }
 }
