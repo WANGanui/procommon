@@ -36,4 +36,12 @@ public interface WorkDataService {
      * @throws Exception
      */
     List<Workdata> selectList(WorkdataCriteria example, String dapartmentdataid) throws Exception;
+
+    /**
+     * 工作日志列表
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    List<Workdata> queryList(WorkdataCriteria example) throws Exception;
 }
