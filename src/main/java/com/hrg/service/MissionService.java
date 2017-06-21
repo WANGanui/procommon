@@ -6,6 +6,7 @@ import com.hrg.model.Worker;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by 82705 on 2017/6/1.
@@ -54,5 +55,13 @@ public interface MissionService {
      * @throws Exception
      */
     PageUtil<Mission> selectByExample(MissionCriteria example, PageUtil pageUtil) throws Exception;
+
+    /**
+     *
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    Map<String,Object> slectWorkerMission(MissionCriteria example,String wokerdataid) throws Exception;
 
 }

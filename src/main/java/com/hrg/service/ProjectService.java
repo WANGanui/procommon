@@ -2,6 +2,7 @@ package com.hrg.service;
 
 import com.hrg.model.Project;
 import com.hrg.model.ProjectCriteria;
+import com.hrg.model.WorkerRelProject;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public interface ProjectService {
      * @return
      * @throws Exception
      */
-    boolean insert(Project project) throws Exception;
+    boolean insert(Project project, List<WorkerRelProject> relProjects) throws Exception;
 
     /**
      * 修改项目

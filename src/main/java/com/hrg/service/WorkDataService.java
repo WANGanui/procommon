@@ -2,6 +2,7 @@ package com.hrg.service;
 
 import com.hrg.model.Workdata;
 import com.hrg.model.WorkdataCriteria;
+import com.hrg.model.Worker;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
@@ -34,5 +35,5 @@ public interface WorkDataService {
      * @return
      * @throws Exception
      */
-    List<Map<String,Object>> selectdetail(WorkdataCriteria example,String dapartmentdataid) throws Exception;
+    List<Workdata> selectList(WorkdataCriteria example, String dapartmentdataid) throws Exception;
 }
