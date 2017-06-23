@@ -64,4 +64,12 @@ public interface MissionService {
      */
     Map<String,Object> slectWorkerMission(MissionCriteria example,String wokerdataid) throws Exception;
 
+    /**
+     *
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    Map<String,Object> slectMissionBylevel(MissionCriteria example) throws Exception;
+
 }

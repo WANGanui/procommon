@@ -187,6 +187,14 @@ public class MissionCriteria implements Serializable {
 
     protected List<String> auditornameList;
 
+    protected String level;
+
+    protected String levelMin;
+
+    protected String levelMax;
+
+    protected List<String> levelList;
+
     private static final long serialVersionUID = 1L;
 
     public MissionCriteria() {
@@ -919,5 +927,37 @@ public class MissionCriteria implements Serializable {
 
     public List<String> getAuditornameList() {
         return auditornameList;
+    }
+
+    public void setLevel(String level) {
+        this.level = level == null ? null : level.trim();
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevelMin(String levelMin) {
+        this.levelMin = levelMin == null ? null : levelMin.trim();
+    }
+
+    public String getLevelMin() {
+        return levelMin;
+    }
+
+    public void setLevelMax(String levelMax) {
+        this.levelMax = levelMax == null ? null : levelMax.trim();
+    }
+
+    public String getLevelMax() {
+        return levelMax;
+    }
+
+    public void setLevelList(List<String> levelList) {
+        this.levelList = levelList;
+    }
+
+    public List<String> getLevelList() {
+        return levelList;
     }
 }

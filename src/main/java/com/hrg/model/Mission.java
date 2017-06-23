@@ -237,6 +237,16 @@ public class Mission implements Serializable {
      */
     private String auditorname;
 
+    /**
+     * 项目阶段（1现场勘查2设备实测3技术方案设计4成本核算）
+     */
+    public static final String LEVEL = "level";
+
+    /**
+     * 项目阶段（1现场勘查2设备实测3技术方案设计4成本核算）
+     */
+    private String level;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -605,5 +615,21 @@ public class Mission implements Serializable {
      */
     public void setAuditorname(String auditorname) {
         this.auditorname = auditorname == null ? null : auditorname.trim();
+    }
+
+    /**
+     * @return level
+     *         项目阶段（1现场勘查2设备实测3技术方案设计4成本核算）
+     */
+    public String getLevel() {
+        return level;
+    }
+
+    /**
+     * @param level
+     *         项目阶段（1现场勘查2设备实测3技术方案设计4成本核算）
+     */
+    public void setLevel(String level) {
+        this.level = level == null ? null : level.trim();
     }
 }

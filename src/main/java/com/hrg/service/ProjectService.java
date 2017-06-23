@@ -61,4 +61,12 @@ public interface ProjectService {
      * @throws Exception
      */
     Map<String, Object> selectProjectDetail(String dataid)throws Exception;
+
+    /**
+     * 查询员工拥有的项目
+     * @param workerdataid
+     * @return
+     * @throws Exception
+     */
+    List<Project> selectByWorker(String workerdataid)throws Exception;
 }
