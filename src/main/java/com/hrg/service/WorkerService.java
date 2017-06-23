@@ -94,4 +94,11 @@ public interface WorkerService {
      * @throws Exception
      */
     List<Worker> selectList(WorkerCriteria example) throws Exception;
+
+    /**
+     * 查询所有角色和部门
+     * @return
+     * @throws Exception
+     */
+    Map<String,Object> selectRoleAndPartment() throws Exception;
 }
