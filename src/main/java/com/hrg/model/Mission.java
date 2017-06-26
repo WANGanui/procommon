@@ -257,7 +257,14 @@ public class Mission implements Serializable {
      */
     private String state;
 
+    public static final String MEMBER = "member";
+
+
+    private String member;
+
     private static final long serialVersionUID = 1L;
+
+
 
     /**
      * @return dataid
@@ -657,5 +664,13 @@ public class Mission implements Serializable {
      */
     public void setState(String state) {
         this.state = state == null ? null : state.trim();
+    }
+
+    public String getMember() {
+        return member;
+    }
+
+    public void setMember(String member) {
+        this.member = member;
     }
 }
