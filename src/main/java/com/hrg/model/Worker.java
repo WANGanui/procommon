@@ -108,6 +108,8 @@ public class Worker implements Serializable {
     private Date createtime;
 
     private static final long serialVersionUID = 1L;
+    public static final String ROLEID = "roleid";
+    private String roleid;
 
     /**
      * @return dataid
@@ -267,5 +269,13 @@ public class Worker implements Serializable {
      */
     public void setCreatetime(Date createtime) {
         this.createtime = createtime;
+    }
+
+    public String getRoleid() {
+        return roleid;
+    }
+
+    public void setRoleid(String roleid) {
+        this.roleid = roleid;
     }
 }

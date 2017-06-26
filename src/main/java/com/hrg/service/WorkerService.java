@@ -57,11 +57,10 @@ public interface WorkerService {
     /**
      * 添加员工
      * @param worker
-     * @param roleList
      * @return
      * @throws Exception
      */
-    boolean insert(Worker worker, List<WorkerRole> roleList) throws Exception;
+    boolean insert(Worker worker, String roledattaid) throws Exception;
 
     /**
      * 根据id查询对象

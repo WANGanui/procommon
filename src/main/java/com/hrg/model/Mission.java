@@ -245,9 +245,16 @@ public class Mission implements Serializable {
     /**
      * 项目阶段（1现场勘查2设备实测3技术方案设计4成本核算）
      */
-    private String level;
+    private String member;
 
     private static final long serialVersionUID = 1L;
+
+    public static final String MEMBER = "member";
+
+    /**
+     * 项目阶段（1现场勘查2设备实测3技术方案设计4成本核算）
+     */
+    private String level;
 
     /**
      * @return dataid
@@ -631,5 +638,12 @@ public class Mission implements Serializable {
      */
     public void setLevel(String level) {
         this.level = level == null ? null : level.trim();
+    }
+    public String getMember() {
+        return member;
+    }
+
+    public void setMember(String member) {
+        this.member = member == null ? null : member.trim();
     }
 }
