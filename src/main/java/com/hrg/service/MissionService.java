@@ -27,7 +27,7 @@ public interface MissionService {
      * @return
      * @throws Exception
      */
-    Mission selectDetailById(String dataid) throws Exception;
+    Map<String,Object> selectDetailById(String dataid) throws Exception;
 
     /**
      * 创建任务
@@ -72,4 +72,11 @@ public interface MissionService {
      */
     Map<String,Object> slectMissionBylevel(MissionCriteria example) throws Exception;
 
+    /**
+     * 根据主键删除任务
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    boolean deleteMission(String dataid) throws Exception;
 }
