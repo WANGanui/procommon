@@ -79,4 +79,11 @@ public interface MissionService {
      * @throws Exception
      */
     boolean deleteMission(String dataid) throws Exception;
+
+    /**
+     * 修改状态
+     * @return
+     * @throws Exception
+     */
+    boolean updateState(Mission mission) throws Exception;
 }
