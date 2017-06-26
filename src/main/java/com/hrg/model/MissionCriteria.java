@@ -55,13 +55,13 @@ public class MissionCriteria implements Serializable {
 
     protected Date finishtimeMax;
 
-    protected String state;
+    protected String missionstate;
 
-    protected String stateMin;
+    protected String missionstateMin;
 
-    protected String stateMax;
+    protected String missionstateMax;
 
-    protected List<String> stateList;
+    protected List<String> missionstateList;
 
     protected String prodataid;
 
@@ -194,6 +194,14 @@ public class MissionCriteria implements Serializable {
     protected String levelMax;
 
     protected List<String> levelList;
+
+    protected String state;
+
+    protected String stateMin;
+
+    protected String stateMax;
+
+    protected List<String> stateList;
 
     private static final long serialVersionUID = 1L;
 
@@ -401,36 +409,36 @@ public class MissionCriteria implements Serializable {
         return finishtimeMax;
     }
 
-    public void setState(String state) {
-        this.state = state == null ? null : state.trim();
+    public void setMissionstate(String missionstate) {
+        this.missionstate = missionstate == null ? null : missionstate.trim();
     }
 
-    public String getState() {
-        return state;
+    public String getMissionstate() {
+        return missionstate;
     }
 
-    public void setStateMin(String stateMin) {
-        this.stateMin = stateMin == null ? null : stateMin.trim();
+    public void setMissionstateMin(String missionstateMin) {
+        this.missionstateMin = missionstateMin == null ? null : missionstateMin.trim();
     }
 
-    public String getStateMin() {
-        return stateMin;
+    public String getMissionstateMin() {
+        return missionstateMin;
     }
 
-    public void setStateMax(String stateMax) {
-        this.stateMax = stateMax == null ? null : stateMax.trim();
+    public void setMissionstateMax(String missionstateMax) {
+        this.missionstateMax = missionstateMax == null ? null : missionstateMax.trim();
     }
 
-    public String getStateMax() {
-        return stateMax;
+    public String getMissionstateMax() {
+        return missionstateMax;
     }
 
-    public void setStateList(List<String> stateList) {
-        this.stateList = stateList;
+    public void setMissionstateList(List<String> missionstateList) {
+        this.missionstateList = missionstateList;
     }
 
-    public List<String> getStateList() {
-        return stateList;
+    public List<String> getMissionstateList() {
+        return missionstateList;
     }
 
     public void setProdataid(String prodataid) {
@@ -959,5 +967,37 @@ public class MissionCriteria implements Serializable {
 
     public List<String> getLevelList() {
         return levelList;
+    }
+
+    public void setState(String state) {
+        this.state = state == null ? null : state.trim();
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setStateMin(String stateMin) {
+        this.stateMin = stateMin == null ? null : stateMin.trim();
+    }
+
+    public String getStateMin() {
+        return stateMin;
+    }
+
+    public void setStateMax(String stateMax) {
+        this.stateMax = stateMax == null ? null : stateMax.trim();
+    }
+
+    public String getStateMax() {
+        return stateMax;
+    }
+
+    public void setStateList(List<String> stateList) {
+        this.stateList = stateList;
+    }
+
+    public List<String> getStateList() {
+        return stateList;
     }
 }

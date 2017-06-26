@@ -68,14 +68,14 @@ public class Mission implements Serializable {
     private Date finishtime;
 
     /**
-     * 状态
+     * 任务状态(0已同意1已拒绝2待审核)
      */
-    public static final String STATE = "state";
+    public static final String MISSIONSTATE = "missionstate";
 
     /**
-     * 状态
+     * 任务状态(0已同意1已拒绝2待审核)
      */
-    private String state;
+    private String missionstate;
 
     /**
      * 项目id
@@ -245,16 +245,19 @@ public class Mission implements Serializable {
     /**
      * 项目阶段（1现场勘查2设备实测3技术方案设计4成本核算）
      */
-    private String member;
-
-    private static final long serialVersionUID = 1L;
-
-    public static final String MEMBER = "member";
+    private String level;
 
     /**
-     * 项目阶段（1现场勘查2设备实测3技术方案设计4成本核算）
+     * 流程状态(0未开始1进行中2已完成)
      */
-    private String level;
+    public static final String STATE = "state";
+
+    /**
+     * 流程状态(0未开始1进行中2已完成)
+     */
+    private String state;
+
+    private static final long serialVersionUID = 1L;
 
     /**
      * @return dataid
@@ -353,19 +356,19 @@ public class Mission implements Serializable {
     }
 
     /**
-     * @return state
-     *         状态
+     * @return missionstate
+     *         任务状态(0已同意1已拒绝2待审核)
      */
-    public String getState() {
-        return state;
+    public String getMissionstate() {
+        return missionstate;
     }
 
     /**
-     * @param state
-     *         状态
+     * @param missionstate
+     *         任务状态(0已同意1已拒绝2待审核)
      */
-    public void setState(String state) {
-        this.state = state == null ? null : state.trim();
+    public void setMissionstate(String missionstate) {
+        this.missionstate = missionstate == null ? null : missionstate.trim();
     }
 
     /**
@@ -639,11 +642,20 @@ public class Mission implements Serializable {
     public void setLevel(String level) {
         this.level = level == null ? null : level.trim();
     }
-    public String getMember() {
-        return member;
+
+    /**
+     * @return state
+     *         流程状态(0未开始1进行中2已完成)
+     */
+    public String getState() {
+        return state;
     }
 
-    public void setMember(String member) {
-        this.member = member == null ? null : member.trim();
+    /**
+     * @param state
+     *         流程状态(0未开始1进行中2已完成)
+     */
+    public void setState(String state) {
+        this.state = state == null ? null : state.trim();
     }
 }
