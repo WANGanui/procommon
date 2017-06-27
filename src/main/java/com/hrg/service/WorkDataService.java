@@ -44,4 +44,21 @@ public interface WorkDataService {
      * @throws Exception
      */
     List<Workdata> queryList(WorkdataCriteria example) throws Exception;
+
+    /**
+     *详情
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    Workdata selectDetail(String dataid) throws Exception;
+
+    /**
+     * 修改
+     * @param workdata
+     * @return
+     * @throws Exception
+     */
+    boolean update(Workdata workdata) throws Exception;
+
 }

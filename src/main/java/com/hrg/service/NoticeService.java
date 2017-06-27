@@ -50,4 +50,12 @@ public interface NoticeService {
      * @return
      */
     List<Notice> selectList(NoticeCriteria example) throws Exception;
+
+    /**
+     * 详情
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    Notice selectDetail(String dataid) throws Exception;
 }

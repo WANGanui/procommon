@@ -100,4 +100,37 @@ public interface WorkerService {
      * @throws Exception
      */
     Map<String,Object> selectRoleAndPartment() throws Exception;
+
+    /**
+     *
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    Map selectWorkerRole(String dataid)throws Exception;
+
+    /**
+     * 修改员工角色
+     * @param worker
+     * @param roleid
+     * @return
+     * @throws Exception
+     */
+    boolean updateWorkerandRole(Worker worker,String roleid) throws Exception;
+
+    /**
+     * 删除
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    boolean delete(String dataid) throws Exception;
+
+    /**
+     * 查询首页数据
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    Map selectIndex(String dataid) throws Exception;
 }
