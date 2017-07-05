@@ -51,4 +51,12 @@ public interface DepartmentService {
      * @throws Exception
      */
     Department selectDetail(String dataid) throws Exception;
+
+    /**
+     * 查询项目部门
+     * @param prodataid
+     * @return
+     * @throws Exception
+     */
+    List<Department> selectPartmentBypro(String prodataid) throws Exception;
 }

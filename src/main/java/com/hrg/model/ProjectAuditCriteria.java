@@ -52,6 +52,14 @@ public class ProjectAuditCriteria implements Serializable {
 
     protected List<Integer> orderidList;
 
+    protected String remark;
+
+    protected String remarkMin;
+
+    protected String remarkMax;
+
+    protected List<String> remarkList;
+
     private static final long serialVersionUID = 1L;
 
     public ProjectAuditCriteria() {
@@ -248,5 +256,37 @@ public class ProjectAuditCriteria implements Serializable {
 
     public List<Integer> getOrderidList() {
         return orderidList;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark == null ? null : remark.trim();
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemarkMin(String remarkMin) {
+        this.remarkMin = remarkMin == null ? null : remarkMin.trim();
+    }
+
+    public String getRemarkMin() {
+        return remarkMin;
+    }
+
+    public void setRemarkMax(String remarkMax) {
+        this.remarkMax = remarkMax == null ? null : remarkMax.trim();
+    }
+
+    public String getRemarkMax() {
+        return remarkMax;
+    }
+
+    public void setRemarkList(List<String> remarkList) {
+        this.remarkList = remarkList;
+    }
+
+    public List<String> getRemarkList() {
+        return remarkList;
     }
 }

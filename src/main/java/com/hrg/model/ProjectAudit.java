@@ -56,6 +56,16 @@ public class ProjectAudit implements Serializable {
      */
     private Integer orderid;
 
+    /**
+     * 备注
+     */
+    public static final String REMARK = "remark";
+
+    /**
+     * 备注
+     */
+    private String remark;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -136,5 +146,21 @@ public class ProjectAudit implements Serializable {
      */
     public void setOrderid(Integer orderid) {
         this.orderid = orderid;
+    }
+
+    /**
+     * @return remark
+     *         备注
+     */
+    public String getRemark() {
+        return remark;
+    }
+
+    /**
+     * @param remark
+     *         备注
+     */
+    public void setRemark(String remark) {
+        this.remark = remark == null ? null : remark.trim();
     }
 }

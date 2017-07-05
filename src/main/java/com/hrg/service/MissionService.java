@@ -2,6 +2,7 @@ package com.hrg.service;
 
 import com.hrg.model.Mission;
 import com.hrg.model.MissionCriteria;
+import com.hrg.model.Workdata;
 import com.hrg.model.Worker;
 import com.hrg.util.PageUtil;
 
@@ -86,4 +87,12 @@ public interface MissionService {
      * @throws Exception
      */
     boolean updateState(Mission mission) throws Exception;
+
+    /**
+     * 任务进度详情
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    Map<String,Object> selectMissionJindu(String dataid) throws Exception;
 }
