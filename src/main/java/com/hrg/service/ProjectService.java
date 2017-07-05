@@ -1,8 +1,9 @@
 package com.hrg.service;
 
 import com.hrg.model.Project;
+import com.hrg.model.ProjectAudit;
 import com.hrg.model.ProjectCriteria;
-import com.hrg.model.WorkerRelProject;
+import com.hrg.model.ProjectRelDepartment;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public interface ProjectService {
      * @return
      * @throws Exception
      */
-    boolean insert(Project project, List<WorkerRelProject> relProjects) throws Exception;
+    boolean insert(Project project, List<ProjectAudit> projectAudit,List<ProjectRelDepartment> projectRelDepartments) throws Exception;
 
     /**
      * 修改项目
@@ -69,4 +70,12 @@ public interface ProjectService {
      * @throws Exception
      */
     List<Project> selectByWorker(String workerdataid)throws Exception;
+
+    /**
+     *查询登录人的待审核任务
+     * @param auditId
+     * @return
+     * @throws Exception
+     */
+    List<Map> selectProjectAudit(String auditId)throws Exception;
 }
