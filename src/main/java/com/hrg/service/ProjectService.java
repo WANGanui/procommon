@@ -1,9 +1,6 @@
 package com.hrg.service;
 
-import com.hrg.model.Project;
-import com.hrg.model.ProjectAudit;
-import com.hrg.model.ProjectCriteria;
-import com.hrg.model.ProjectRelDepartment;
+import com.hrg.model.*;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
@@ -78,4 +75,24 @@ public interface ProjectService {
      * @throws Exception
      */
     List<Map> selectProjectAudit(String auditId)throws Exception;
+
+    /**
+     * 审核详情
+     * @param projectId
+     * @return
+     */
+    List<Map> selectByExample(String projectId);
+
+    /**
+     * 根据状态和项目ID 查询个数
+     * @param map
+     * @return
+     */
+    int selectAuditInt(Map map);
+
+    /**
+     * 修改项目审核状态
+     * @return
+     */
+    int updateByPrimaryKeySelective(ProjectAudit projectAudit);
 }
