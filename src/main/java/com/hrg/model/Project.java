@@ -253,6 +253,10 @@ public class Project implements Serializable {
      */
     private String isdelete;
 
+    public static final String DELETESTATE = "deletestate";
+
+    private String deletestate;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -605,5 +609,13 @@ public class Project implements Serializable {
      */
     public void setIsdelete(String isdelete) {
         this.isdelete = isdelete == null ? null : isdelete.trim();
+    }
+
+    public String getDeletestate() {
+        return deletestate;
+    }
+
+    public void setDeletestate(String deletestate) {
+        this.deletestate = deletestate;
     }
 }

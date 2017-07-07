@@ -179,6 +179,12 @@ public class ProjectCriteria implements Serializable {
 
     protected List<String> isdeleteList;
 
+    protected String deletestate;
+
+    protected String deletestateMin;
+
+    protected String deletestateMax;
+
     private static final long serialVersionUID = 1L;
 
     public ProjectCriteria() {
@@ -879,5 +885,29 @@ public class ProjectCriteria implements Serializable {
 
     public List<String> getIsdeleteList() {
         return isdeleteList;
+    }
+
+    public String getDeletestate() {
+        return deletestate;
+    }
+
+    public void setDeletestate(String deletestate) {
+        this.deletestate = deletestate;
+    }
+
+    public String getDeletestateMin() {
+        return deletestateMin;
+    }
+
+    public void setDeletestateMin(String deletestateMin) {
+        this.deletestateMin = deletestateMin;
+    }
+
+    public String getDeletestateMax() {
+        return deletestateMax;
+    }
+
+    public void setDeletestateMax(String deletestateMax) {
+        this.deletestateMax = deletestateMax;
     }
 }
