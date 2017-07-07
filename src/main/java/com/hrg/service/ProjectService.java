@@ -91,8 +91,19 @@ public interface ProjectService {
     int selectAuditInt(Map map);
 
     /**
+     * 根据状态和项目ID 查询个数
+     * @param map
+     * @return
+     */
+    int selectAuditDelInt(Map map);
+
+    /**
      * 修改项目审核状态
      * @return
      */
     int updateByPrimaryKeySelective(ProjectAudit projectAudit);
+
+    //删除时复制到删除审核表使用
+    int copy(String prodataid);
+    int updateByPrimaryKeySelective(ProjectAuditDel projectAuditDel);
 }
