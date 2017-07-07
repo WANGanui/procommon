@@ -217,6 +217,32 @@ public class Project implements Serializable {
      */
     private String auditprogress;
 
+    public  static  final  String AUDITORID="auditorid";
+
+    //审核人
+    private String auditorid;
+
+    public static final String DEPARTMENTID="departmentid";
+
+    public String getAuditorid() {
+        return auditorid;
+    }
+
+    public void setAuditorid(String auditorid) {
+        this.auditorid = auditorid;
+    }
+
+    public String getDepartmentid() {
+        return departmentid;
+    }
+
+    public void setDepartmentid(String departmentid) {
+        this.departmentid = departmentid;
+    }
+
+    //参与部门
+    private String departmentid;
+
     /**
      * 是否删除
      */
