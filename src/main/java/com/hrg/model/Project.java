@@ -98,12 +98,12 @@ public class Project implements Serializable {
     private String contect;
 
     /**
-     * 状态
+     * 状态(0待审核1已通过审核2审核中3审核失败)
      */
     public static final String STATE = "state";
 
     /**
-     * 状态
+     * 状态(0待审核1已通过审核2审核中3审核失败)
      */
     private String state;
 
@@ -207,45 +207,28 @@ public class Project implements Serializable {
      */
     private String member;
 
-    public  static  final  String AUDITPROGRESS="auditprogress";
+    /**
+     * 审核进度
+     */
+    public static final String AUDITPROGRESS = "auditprogress";
 
-    private  String auditprogress;//审核进度
+    /**
+     * 审核进度
+     */
+    private String auditprogress;
 
-    public  static  final  String AUDITORID="auditorid";
+    /**
+     * 是否删除
+     */
+    public static final String ISDELETE = "isdelete";
 
-    //审核人
-    private String auditorid;
-
-    public static final String DEPARTMENTID="departmentid";
-    //参与部门
-    private String departmentid;
+    /**
+     * 是否删除
+     */
+    private String isdelete;
 
     private static final long serialVersionUID = 1L;
 
-
-    public String getDepartmentid() {
-        return departmentid;
-    }
-
-    public void setDepartmentid(String departmentid) {
-        this.departmentid = departmentid;
-    }
-
-    public String getAuditorid() {
-        return auditorid;
-    }
-
-    public void setAuditorid(String auditorid) {
-        this.auditorid = auditorid;
-    }
-
-    public String getAuditprogress() {
-        return auditprogress;
-    }
-
-    public void setAuditprogress(String auditprogress) {
-        this.auditprogress = auditprogress;
-    }
     /**
      * @return dataid
      *         dataid
@@ -392,7 +375,7 @@ public class Project implements Serializable {
 
     /**
      * @return state
-     *         状态
+     *         状态(0待审核1已通过审核2审核中3审核失败)
      */
     public String getState() {
         return state;
@@ -400,7 +383,7 @@ public class Project implements Serializable {
 
     /**
      * @param state
-     *         状态
+     *         状态(0待审核1已通过审核2审核中3审核失败)
      */
     public void setState(String state) {
         this.state = state == null ? null : state.trim();
@@ -564,5 +547,37 @@ public class Project implements Serializable {
      */
     public void setMember(String member) {
         this.member = member == null ? null : member.trim();
+    }
+
+    /**
+     * @return auditprogress
+     *         审核进度
+     */
+    public String getAuditprogress() {
+        return auditprogress;
+    }
+
+    /**
+     * @param auditprogress
+     *         审核进度
+     */
+    public void setAuditprogress(String auditprogress) {
+        this.auditprogress = auditprogress == null ? null : auditprogress.trim();
+    }
+
+    /**
+     * @return isdelete
+     *         是否删除
+     */
+    public String getIsdelete() {
+        return isdelete;
+    }
+
+    /**
+     * @param isdelete
+     *         是否删除
+     */
+    public void setIsdelete(String isdelete) {
+        this.isdelete = isdelete == null ? null : isdelete.trim();
     }
 }

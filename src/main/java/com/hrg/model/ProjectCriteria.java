@@ -163,6 +163,22 @@ public class ProjectCriteria implements Serializable {
 
     protected List<String> memberList;
 
+    protected String auditprogress;
+
+    protected String auditprogressMin;
+
+    protected String auditprogressMax;
+
+    protected List<String> auditprogressList;
+
+    protected String isdelete;
+
+    protected String isdeleteMin;
+
+    protected String isdeleteMax;
+
+    protected List<String> isdeleteList;
+
     private static final long serialVersionUID = 1L;
 
     public ProjectCriteria() {
@@ -799,5 +815,69 @@ public class ProjectCriteria implements Serializable {
 
     public List<String> getMemberList() {
         return memberList;
+    }
+
+    public void setAuditprogress(String auditprogress) {
+        this.auditprogress = auditprogress == null ? null : auditprogress.trim();
+    }
+
+    public String getAuditprogress() {
+        return auditprogress;
+    }
+
+    public void setAuditprogressMin(String auditprogressMin) {
+        this.auditprogressMin = auditprogressMin == null ? null : auditprogressMin.trim();
+    }
+
+    public String getAuditprogressMin() {
+        return auditprogressMin;
+    }
+
+    public void setAuditprogressMax(String auditprogressMax) {
+        this.auditprogressMax = auditprogressMax == null ? null : auditprogressMax.trim();
+    }
+
+    public String getAuditprogressMax() {
+        return auditprogressMax;
+    }
+
+    public void setAuditprogressList(List<String> auditprogressList) {
+        this.auditprogressList = auditprogressList;
+    }
+
+    public List<String> getAuditprogressList() {
+        return auditprogressList;
+    }
+
+    public void setIsdelete(String isdelete) {
+        this.isdelete = isdelete == null ? null : isdelete.trim();
+    }
+
+    public String getIsdelete() {
+        return isdelete;
+    }
+
+    public void setIsdeleteMin(String isdeleteMin) {
+        this.isdeleteMin = isdeleteMin == null ? null : isdeleteMin.trim();
+    }
+
+    public String getIsdeleteMin() {
+        return isdeleteMin;
+    }
+
+    public void setIsdeleteMax(String isdeleteMax) {
+        this.isdeleteMax = isdeleteMax == null ? null : isdeleteMax.trim();
+    }
+
+    public String getIsdeleteMax() {
+        return isdeleteMax;
+    }
+
+    public void setIsdeleteList(List<String> isdeleteList) {
+        this.isdeleteList = isdeleteList;
+    }
+
+    public List<String> getIsdeleteList() {
+        return isdeleteList;
     }
 }
