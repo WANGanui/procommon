@@ -107,6 +107,16 @@ public class Workdata implements Serializable {
      */
     private String projectleader;
 
+    /**
+     * 是否已阅读（0否1是）
+     */
+    public static final String ISREAD = "isread";
+
+    /**
+     * 是否已阅读（0否1是）
+     */
+    private String isread;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -267,5 +277,21 @@ public class Workdata implements Serializable {
      */
     public void setProjectleader(String projectleader) {
         this.projectleader = projectleader == null ? null : projectleader.trim();
+    }
+
+    /**
+     * @return isread
+     *         是否已阅读（0否1是）
+     */
+    public String getIsread() {
+        return isread;
+    }
+
+    /**
+     * @param isread
+     *         是否已阅读（0否1是）
+     */
+    public void setIsread(String isread) {
+        this.isread = isread == null ? null : isread.trim();
     }
 }

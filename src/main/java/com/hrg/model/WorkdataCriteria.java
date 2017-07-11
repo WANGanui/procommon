@@ -91,6 +91,14 @@ public class WorkdataCriteria implements Serializable {
 
     protected List<String> projectleaderList;
 
+    protected String isread;
+
+    protected String isreadMin;
+
+    protected String isreadMax;
+
+    protected List<String> isreadList;
+
     private static final long serialVersionUID = 1L;
 
     public WorkdataCriteria() {
@@ -439,5 +447,37 @@ public class WorkdataCriteria implements Serializable {
 
     public List<String> getProjectleaderList() {
         return projectleaderList;
+    }
+
+    public void setIsread(String isread) {
+        this.isread = isread == null ? null : isread.trim();
+    }
+
+    public String getIsread() {
+        return isread;
+    }
+
+    public void setIsreadMin(String isreadMin) {
+        this.isreadMin = isreadMin == null ? null : isreadMin.trim();
+    }
+
+    public String getIsreadMin() {
+        return isreadMin;
+    }
+
+    public void setIsreadMax(String isreadMax) {
+        this.isreadMax = isreadMax == null ? null : isreadMax.trim();
+    }
+
+    public String getIsreadMax() {
+        return isreadMax;
+    }
+
+    public void setIsreadList(List<String> isreadList) {
+        this.isreadList = isreadList;
+    }
+
+    public List<String> getIsreadList() {
+        return isreadList;
     }
 }
