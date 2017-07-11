@@ -20,6 +20,7 @@ public interface MissionService {
      * @return
      * @throws Exception
      */
+    List<Mission> selectList(MissionCriteria example,Worker worker) throws Exception;
     List<Mission> selectList(MissionCriteria example) throws Exception;
 
     /**
