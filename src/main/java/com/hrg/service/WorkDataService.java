@@ -1,12 +1,12 @@
 package com.hrg.service;
 
 import com.hrg.model.Workdata;
+import com.hrg.model.WorkdataChat;
+import com.hrg.model.WorkdataChatCriteria;
 import com.hrg.model.WorkdataCriteria;
-import com.hrg.model.Worker;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by 82705 on 2017/6/2.
@@ -61,4 +61,17 @@ public interface WorkDataService {
      */
     boolean update(Workdata workdata) throws Exception;
 
+    /**
+     * 日志详情及其评论
+     * @param workdataChatCriteria
+     * @return
+     */
+    List<WorkdataChat> selectByExample(WorkdataChatCriteria workdataChatCriteria);
+
+    /**
+     * 添加评论
+     * @param workdataChat
+     * @return
+     */
+    int insert(WorkdataChat workdataChat);
 }
