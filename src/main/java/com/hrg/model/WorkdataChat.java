@@ -17,16 +17,6 @@ public class WorkdataChat implements Serializable {
     private Integer dataid;
 
     /**
-     * 员工id
-     */
-    public static final String WORKERID = "workerid";
-
-    /**
-     * 员工id
-     */
-    private String workerid;
-
-    /**
      * 评论人id
      */
     public static final String CHATID = "chatid";
@@ -66,6 +56,16 @@ public class WorkdataChat implements Serializable {
      */
     private String workdataid;
 
+    /**
+     * 是否已读（0未读1已读）
+     */
+    public static final String ISREAD = "isread";
+
+    /**
+     * 是否已读（0未读1已读）
+     */
+    private String isread;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -82,22 +82,6 @@ public class WorkdataChat implements Serializable {
      */
     public void setDataid(Integer dataid) {
         this.dataid = dataid;
-    }
-
-    /**
-     * @return workerid
-     *         员工id
-     */
-    public String getWorkerid() {
-        return workerid;
-    }
-
-    /**
-     * @param workerid
-     *         员工id
-     */
-    public void setWorkerid(String workerid) {
-        this.workerid = workerid == null ? null : workerid.trim();
     }
 
     /**
@@ -162,5 +146,21 @@ public class WorkdataChat implements Serializable {
      */
     public void setWorkdataid(String workdataid) {
         this.workdataid = workdataid == null ? null : workdataid.trim();
+    }
+
+    /**
+     * @return isread
+     *         是否已读（0未读1已读）
+     */
+    public String getIsread() {
+        return isread;
+    }
+
+    /**
+     * @param isread
+     *         是否已读（0未读1已读）
+     */
+    public void setIsread(String isread) {
+        this.isread = isread == null ? null : isread.trim();
     }
 }

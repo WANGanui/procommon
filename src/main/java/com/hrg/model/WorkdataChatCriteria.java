@@ -20,14 +20,6 @@ public class WorkdataChatCriteria implements Serializable {
 
     protected List<Integer> dataidList;
 
-    protected String workerid;
-
-    protected String workeridMin;
-
-    protected String workeridMax;
-
-    protected List<String> workeridList;
-
     protected String chatid;
 
     protected String chatidMin;
@@ -59,6 +51,14 @@ public class WorkdataChatCriteria implements Serializable {
     protected String workdataidMax;
 
     protected List<String> workdataidList;
+
+    protected String isread;
+
+    protected String isreadMin;
+
+    protected String isreadMax;
+
+    protected List<String> isreadList;
 
     private static final long serialVersionUID = 1L;
 
@@ -128,38 +128,6 @@ public class WorkdataChatCriteria implements Serializable {
 
     public List<Integer> getDataidList() {
         return dataidList;
-    }
-
-    public void setWorkerid(String workerid) {
-        this.workerid = workerid == null ? null : workerid.trim();
-    }
-
-    public String getWorkerid() {
-        return workerid;
-    }
-
-    public void setWorkeridMin(String workeridMin) {
-        this.workeridMin = workeridMin == null ? null : workeridMin.trim();
-    }
-
-    public String getWorkeridMin() {
-        return workeridMin;
-    }
-
-    public void setWorkeridMax(String workeridMax) {
-        this.workeridMax = workeridMax == null ? null : workeridMax.trim();
-    }
-
-    public String getWorkeridMax() {
-        return workeridMax;
-    }
-
-    public void setWorkeridList(List<String> workeridList) {
-        this.workeridList = workeridList;
-    }
-
-    public List<String> getWorkeridList() {
-        return workeridList;
     }
 
     public void setChatid(String chatid) {
@@ -288,5 +256,37 @@ public class WorkdataChatCriteria implements Serializable {
 
     public List<String> getWorkdataidList() {
         return workdataidList;
+    }
+
+    public void setIsread(String isread) {
+        this.isread = isread == null ? null : isread.trim();
+    }
+
+    public String getIsread() {
+        return isread;
+    }
+
+    public void setIsreadMin(String isreadMin) {
+        this.isreadMin = isreadMin == null ? null : isreadMin.trim();
+    }
+
+    public String getIsreadMin() {
+        return isreadMin;
+    }
+
+    public void setIsreadMax(String isreadMax) {
+        this.isreadMax = isreadMax == null ? null : isreadMax.trim();
+    }
+
+    public String getIsreadMax() {
+        return isreadMax;
+    }
+
+    public void setIsreadList(List<String> isreadList) {
+        this.isreadList = isreadList;
+    }
+
+    public List<String> getIsreadList() {
+        return isreadList;
     }
 }
