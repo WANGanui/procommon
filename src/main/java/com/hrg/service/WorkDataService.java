@@ -7,6 +7,7 @@ import com.hrg.model.WorkdataCriteria;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by 82705 on 2017/6/2.
@@ -74,4 +75,11 @@ public interface WorkDataService {
      * @return
      */
     int insert(WorkdataChat workdataChat);
+
+    /**
+     * 修改评论
+     * @param record
+     * @return
+     */
+    int updateByExampleSelective(Map record);
 }
