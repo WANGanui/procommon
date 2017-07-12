@@ -121,6 +121,18 @@ public class Workdata implements Serializable {
 
     private String chat;
 
+    public static final String COUNT = "count";
+
+    private int count;
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
     public String getChat() {
         return chat;
     }
