@@ -117,6 +117,18 @@ public class Workdata implements Serializable {
      */
     private String isread;
 
+    public static final String CHAT = "chat";
+
+    private String chat;
+
+    public String getChat() {
+        return chat;
+    }
+
+    public void setChat(String chat) {
+        this.chat = chat;
+    }
+
     private static final long serialVersionUID = 1L;
 
     /**
