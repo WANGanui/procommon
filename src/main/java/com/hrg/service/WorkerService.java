@@ -133,4 +133,12 @@ public interface WorkerService {
      * @throws Exception
      */
     Map selectIndex(String dataid) throws Exception;
+
+    /**
+     * 柱状图
+     * @param worker
+     * @return
+     * @throws Exception
+     */
+    List slectyeji(Worker worker) throws Exception;
 }
