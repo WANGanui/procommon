@@ -106,4 +106,6 @@ public interface ProjectService {
     //删除时复制到删除审核表使用
     int copy(String prodataid);
     int updateByPrimaryKeySelective(ProjectAuditDel projectAuditDel);
+
+    void insertDataTable(Map map);
 }
