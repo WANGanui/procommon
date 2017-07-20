@@ -2,7 +2,6 @@ package com.hrg.service;
 
 import com.hrg.model.Worker;
 import com.hrg.model.WorkerCriteria;
-import com.hrg.model.WorkerRole;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
@@ -132,7 +131,7 @@ public interface WorkerService {
      * @return
      * @throws Exception
      */
-    Map selectIndex(String dataid) throws Exception;
+    Map selectIndex(String dataid,Worker worker) throws Exception;
 
     /**
      * 柱状图
