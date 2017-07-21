@@ -262,9 +262,21 @@ public class Mission implements Serializable {
 
     private String member;
 
+    public static final String AUDITS = "audits";
+
+    private String audits;
+
+
     private static final long serialVersionUID = 1L;
 
 
+    public String getAudits() {
+        return audits;
+    }
+
+    public void setAudits(String audits) {
+        this.audits = audits;
+    }
 
     /**
      * @return dataid
