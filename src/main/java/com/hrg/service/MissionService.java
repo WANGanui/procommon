@@ -1,9 +1,6 @@
 package com.hrg.service;
 
-import com.hrg.model.Mission;
-import com.hrg.model.MissionCriteria;
-import com.hrg.model.Workdata;
-import com.hrg.model.Worker;
+import com.hrg.model.*;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
@@ -38,7 +35,7 @@ public interface MissionService {
      * @return
      * @throws Exception
      */
-    boolean insert(Mission mission, List<Worker> workerList) throws Exception;
+    boolean insert(Mission mission, List<Worker> workerList, List<MissionAudit> auditList) throws Exception;
 
     /**
      * 修改任务

@@ -60,6 +60,14 @@ public class MissionAuditCriteria implements Serializable {
 
     protected List<String> remarkList;
 
+    protected String auditname;
+
+    protected String auditnameMin;
+
+    protected String auditnameMax;
+
+    protected List<String> auditnameList;
+
     private static final long serialVersionUID = 1L;
 
     public MissionAuditCriteria() {
@@ -288,5 +296,37 @@ public class MissionAuditCriteria implements Serializable {
 
     public List<String> getRemarkList() {
         return remarkList;
+    }
+
+    public void setAuditname(String auditname) {
+        this.auditname = auditname == null ? null : auditname.trim();
+    }
+
+    public String getAuditname() {
+        return auditname;
+    }
+
+    public void setAuditnameMin(String auditnameMin) {
+        this.auditnameMin = auditnameMin == null ? null : auditnameMin.trim();
+    }
+
+    public String getAuditnameMin() {
+        return auditnameMin;
+    }
+
+    public void setAuditnameMax(String auditnameMax) {
+        this.auditnameMax = auditnameMax == null ? null : auditnameMax.trim();
+    }
+
+    public String getAuditnameMax() {
+        return auditnameMax;
+    }
+
+    public void setAuditnameList(List<String> auditnameList) {
+        this.auditnameList = auditnameList;
+    }
+
+    public List<String> getAuditnameList() {
+        return auditnameList;
     }
 }

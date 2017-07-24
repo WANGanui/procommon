@@ -66,6 +66,16 @@ public class MissionAudit implements Serializable {
      */
     private String remark;
 
+    /**
+     * 审核人名称
+     */
+    public static final String AUDITNAME = "auditname";
+
+    /**
+     * 审核人名称
+     */
+    private String auditname;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -162,5 +172,21 @@ public class MissionAudit implements Serializable {
      */
     public void setRemark(String remark) {
         this.remark = remark == null ? null : remark.trim();
+    }
+
+    /**
+     * @return auditname
+     *         审核人名称
+     */
+    public String getAuditname() {
+        return auditname;
+    }
+
+    /**
+     * @param auditname
+     *         审核人名称
+     */
+    public void setAuditname(String auditname) {
+        this.auditname = auditname == null ? null : auditname.trim();
     }
 }
