@@ -2,9 +2,11 @@ package com.hrg.service;
 
 import com.hrg.model.Notice;
 import com.hrg.model.NoticeCriteria;
+import com.hrg.model.NoticeRelWorker;
 import com.hrg.util.PageUtil;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by 82705 on 2017/6/1.
@@ -58,4 +60,21 @@ public interface NoticeService {
      * @throws Exception
      */
     Notice selectDetail(String dataid) throws Exception;
+
+    /**
+     * 查询公告列表
+     * @param map
+     * @return
+     * @throws Exception
+     */
+    List<Map> selectNoticeWork(Map map)  throws Exception;
+    /**
+     * 修改公告阅读表
+     * @param map
+     * @return
+     * @throws Exception
+     */
+    int updateStatusNoticeRelWorker(NoticeRelWorker map)  throws Exception;
+
+
 }
