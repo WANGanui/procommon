@@ -17,4 +17,21 @@ public interface MissionAuditService {
      * @throws Exception
      */
     List<MissionAudit> selectList(MissionAuditCriteria example) throws Exception;
+
+    /**
+     * 修改
+     * @param missionAudit
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    boolean update(MissionAudit missionAudit,MissionAuditCriteria example) throws Exception;
+
+    /**
+     * 查条数
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    int count (MissionAuditCriteria example) throws Exception;
 }
