@@ -29,6 +29,14 @@ public interface MissionService {
     Map<String,Object> selectDetailById(String dataid) throws Exception;
 
     /**
+     * 任务实体
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    Mission selectDetail(String dataid) throws Exception;
+
+    /**
      * 创建任务
      * @param mission 任务实体
      * @param workerList 任务人员集合
@@ -93,4 +101,36 @@ public interface MissionService {
      * @throws Exception
      */
     Map<String,Object> selectMissionJindu(String dataid) throws Exception;
+
+    /**
+     * 查询任务文件集合
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    List<MissionFile> selectMissionFileList(MissionFileCriteria example) throws Exception;
+
+    /**
+     * 添加文件
+     * @param missionFile
+     * @return
+     * @throws Exception
+     */
+    boolean insert (MissionFile missionFile) throws Exception;
+
+    /**
+     * 查询文件
+     * @param missionid
+     * @return
+     * @throws Exception
+     */
+    List<MissionFile> selectMissionFile(String missionid) throws Exception;
+
+    /**
+     * 删除文件
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    boolean deleteFile(String dataid) throws Exception;
 }
