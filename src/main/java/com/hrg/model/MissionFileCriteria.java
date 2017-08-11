@@ -52,6 +52,14 @@ public class MissionFileCriteria implements Serializable {
 
     protected List<String> missionidList;
 
+    protected String projectid;
+
+    protected String projectidMin;
+
+    protected String projectidMax;
+
+    protected List<String> projectidList;
+
     private static final long serialVersionUID = 1L;
 
     public MissionFileCriteria() {
@@ -248,5 +256,37 @@ public class MissionFileCriteria implements Serializable {
 
     public List<String> getMissionidList() {
         return missionidList;
+    }
+
+    public void setProjectid(String projectid) {
+        this.projectid = projectid == null ? null : projectid.trim();
+    }
+
+    public String getProjectid() {
+        return projectid;
+    }
+
+    public void setProjectidMin(String projectidMin) {
+        this.projectidMin = projectidMin == null ? null : projectidMin.trim();
+    }
+
+    public String getProjectidMin() {
+        return projectidMin;
+    }
+
+    public void setProjectidMax(String projectidMax) {
+        this.projectidMax = projectidMax == null ? null : projectidMax.trim();
+    }
+
+    public String getProjectidMax() {
+        return projectidMax;
+    }
+
+    public void setProjectidList(List<String> projectidList) {
+        this.projectidList = projectidList;
+    }
+
+    public List<String> getProjectidList() {
+        return projectidList;
     }
 }

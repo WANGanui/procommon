@@ -119,12 +119,28 @@ public interface MissionService {
     boolean insert (MissionFile missionFile) throws Exception;
 
     /**
-     * 查询文件
+     * 查询任务文件
      * @param missionid
      * @return
      * @throws Exception
      */
     List<MissionFile> selectMissionFile(String missionid) throws Exception;
+
+    /**
+     * 查询项目文件
+     * @param missionid
+     * @return
+     * @throws Exception
+     */
+    List<MissionFile> selectProjectFile(String missionid) throws Exception;
+
+    /**
+     * 查询文件实体
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    MissionFile selectFIle(MissionFileCriteria example) throws Exception;
 
     /**
      * 删除文件
@@ -133,4 +149,12 @@ public interface MissionService {
      * @throws Exception
      */
     boolean deleteFile(String dataid) throws Exception;
+
+    /**
+     * 查询列表文件
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    List<MissionFile> selectFileList(MissionFileCriteria example) throws Exception;
 }

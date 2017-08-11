@@ -56,6 +56,16 @@ public class MissionFile implements Serializable {
      */
     private String missionid;
 
+    /**
+     * 项目id
+     */
+    public static final String PROJECTID = "projectid";
+
+    /**
+     * 项目id
+     */
+    private String projectid;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -136,5 +146,21 @@ public class MissionFile implements Serializable {
      */
     public void setMissionid(String missionid) {
         this.missionid = missionid == null ? null : missionid.trim();
+    }
+
+    /**
+     * @return projectid
+     *         项目id
+     */
+    public String getProjectid() {
+        return projectid;
+    }
+
+    /**
+     * @param projectid
+     *         项目id
+     */
+    public void setProjectid(String projectid) {
+        this.projectid = projectid == null ? null : projectid.trim();
     }
 }
