@@ -108,4 +108,53 @@ public interface ProjectService {
     int updateByPrimaryKeySelective(ProjectAuditDel projectAuditDel);
 
     void insertDataTable(Map map);
+
+    /**
+     * 查询项目周报
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    List<Project> selectProjectReport(ProjectCriteria example) throws Exception;
+
+    /**
+     * 新增项目周报
+     * @param projectid
+     * @param projectWeekReport
+     * @return
+     * @throws Exception
+     */
+    boolean insertReport(String projectid,ProjectWeekReport projectWeekReport) throws Exception;
+
+    /**
+     * 修改项目周报
+     * @param projectWeekReport
+     * @return
+     * @throws Exception
+     */
+    boolean updateReport(ProjectWeekReport projectWeekReport) throws Exception;
+
+    /**
+     * 查询周报详情
+     * @param dataid
+     * @return
+     * @throws Exception
+     */
+    ProjectWeekReport selectReportdetail(String dataid) throws Exception;
+
+    /**
+     * 查询个人项目进度列表
+     * @param workerdataid
+     * @return
+     * @throws Exception
+     */
+    List<ProjectWeekReport> selectReportList(String workerdataid) throws Exception;
+
+    /**
+     * 查询员工有效项目
+     * @param workerdataid
+     * @return
+     * @throws Exception
+     */
+    List<Project> selectProjectListByworker(String workerdataid) throws Exception;
 }

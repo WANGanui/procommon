@@ -187,6 +187,14 @@ public class ProjectCriteria implements Serializable {
 
     protected List<String> deletestateList;
 
+    protected Integer price;
+
+    protected Integer priceMin;
+
+    protected Integer priceMax;
+
+    protected List<Integer> priceList;
+
     private static final long serialVersionUID = 1L;
 
     public ProjectCriteria() {
@@ -919,5 +927,37 @@ public class ProjectCriteria implements Serializable {
 
     public void setDeletestateList(List<String> deletestateList) {
         this.deletestateList = deletestateList;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public Integer getPriceMin() {
+        return priceMin;
+    }
+
+    public void setPriceMin(Integer priceMin) {
+        this.priceMin = priceMin;
+    }
+
+    public Integer getPriceMax() {
+        return priceMax;
+    }
+
+    public void setPriceMax(Integer priceMax) {
+        this.priceMax = priceMax;
+    }
+
+    public List<Integer> getPriceList() {
+        return priceList;
+    }
+
+    public void setPriceList(List<Integer> priceList) {
+        this.priceList = priceList;
     }
 }

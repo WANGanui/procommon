@@ -224,6 +224,24 @@ public class Project implements Serializable {
 
     public static final String DEPARTMENTID="departmentid";
 
+    /**
+     * 签单金额
+     */
+    public static final String PRICE = "price";
+
+    /**
+     * 签单金额
+     */
+    private Integer price;
+
+    public static final String WEEKCONTEXT = "weekcontext";
+
+    private String weekcontext;
+
+    public static final String PLAN = "plan";
+
+    private String plan;
+
     public String getAuditorid() {
         return auditorid;
     }
@@ -617,5 +635,36 @@ public class Project implements Serializable {
 
     public void setDeletestate(String deletestate) {
         this.deletestate = deletestate;
+    }
+    /**
+     * @return price
+     *         签单金额
+     */
+    public Integer getPrice() {
+        return price;
+    }
+
+    /**
+     * @param price
+     *         签单金额
+     */
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public String getWeekcontext() {
+        return weekcontext;
+    }
+
+    public void setWeekcontext(String weekcontext) {
+        this.weekcontext = weekcontext;
+    }
+
+    public String getPlan() {
+        return plan;
+    }
+
+    public void setPlan(String plan) {
+        this.plan = plan;
     }
 }
