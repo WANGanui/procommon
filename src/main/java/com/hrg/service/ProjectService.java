@@ -115,7 +115,7 @@ public interface ProjectService {
      * @return
      * @throws Exception
      */
-    List<Project> selectProjectReport(ProjectCriteria example) throws Exception;
+    List<Project> selectProjectReport(ProjectCriteria example,String lastweek) throws Exception;
 
     /**
      * 新增项目周报

@@ -18,8 +18,8 @@ public interface MissionService {
      * @throws Exception
      */
     List<Mission> selectList(MissionCriteria example,Worker worker) throws Exception;
+    List<Mission> selectList1(MissionCriteria example,Worker worker) throws Exception;
     List<Mission> selectList(MissionCriteria example) throws Exception;
-
     /**
      * 根据主键查询任务详情
      * @param dataid
