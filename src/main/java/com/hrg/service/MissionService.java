@@ -157,4 +157,21 @@ public interface MissionService {
      * @throws Exception
      */
     List<MissionFile> selectFileList(MissionFileCriteria example) throws Exception;
+
+    /**
+     * 是否已浏览
+     * @param worker
+     * @param fileid
+     * @return
+     * @throws Exception
+     */
+    boolean isread(Worker worker,String fileid) throws Exception;
+
+    /**
+     * 查询已读人员
+     * @param example
+     * @return
+     * @throws Exception
+     */
+    List<FileOption> selectFileoption(FileOptionCriteria example) throws Exception;
 }
