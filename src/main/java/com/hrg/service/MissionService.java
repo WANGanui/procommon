@@ -156,7 +156,7 @@ public interface MissionService {
      * @return
      * @throws Exception
      */
-    List<MissionFile> selectFileList(MissionFileCriteria example) throws Exception;
+    List<MissionFile> selectFileList(MissionFileCriteria example,Worker worker) throws Exception;
 
     /**
      * 是否已浏览

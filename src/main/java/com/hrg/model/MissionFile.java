@@ -66,6 +66,26 @@ public class MissionFile implements Serializable {
      */
     private String projectid;
 
+    /**
+     * orderid
+     */
+    public static final String ORDERID = "orderid";
+
+    /**
+     * orderid
+     */
+    private Integer orderid;
+
+    /**
+     * 是否显示
+     */
+    public static final String SHOW = "show";
+
+    /**
+     * 是否显示
+     */
+    private Integer show;
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -162,5 +182,37 @@ public class MissionFile implements Serializable {
      */
     public void setProjectid(String projectid) {
         this.projectid = projectid == null ? null : projectid.trim();
+    }
+
+    /**
+     * @return orderid
+     *         orderid
+     */
+    public Integer getOrderid() {
+        return orderid;
+    }
+
+    /**
+     * @param orderid
+     *         orderid
+     */
+    public void setOrderid(Integer orderid) {
+        this.orderid = orderid;
+    }
+
+    /**
+     * @return show
+     *         是否显示
+     */
+    public Integer getShow() {
+        return show;
+    }
+
+    /**
+     * @param show
+     *         是否显示
+     */
+    public void setShow(Integer show) {
+        this.show = show;
     }
 }

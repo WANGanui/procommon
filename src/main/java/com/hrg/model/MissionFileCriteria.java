@@ -60,6 +60,22 @@ public class MissionFileCriteria implements Serializable {
 
     protected List<String> projectidList;
 
+    protected Integer orderid;
+
+    protected Integer orderidMin;
+
+    protected Integer orderidMax;
+
+    protected List<Integer> orderidList;
+
+    protected Integer show;
+
+    protected Integer showMin;
+
+    protected Integer showMax;
+
+    protected List<Integer> showList;
+
     private static final long serialVersionUID = 1L;
 
     public MissionFileCriteria() {
@@ -288,5 +304,69 @@ public class MissionFileCriteria implements Serializable {
 
     public List<String> getProjectidList() {
         return projectidList;
+    }
+
+    public void setOrderid(Integer orderid) {
+        this.orderid = orderid;
+    }
+
+    public Integer getOrderid() {
+        return orderid;
+    }
+
+    public void setOrderidMin(Integer orderidMin) {
+        this.orderidMin = orderidMin;
+    }
+
+    public Integer getOrderidMin() {
+        return orderidMin;
+    }
+
+    public void setOrderidMax(Integer orderidMax) {
+        this.orderidMax = orderidMax;
+    }
+
+    public Integer getOrderidMax() {
+        return orderidMax;
+    }
+
+    public void setOrderidList(List<Integer> orderidList) {
+        this.orderidList = orderidList;
+    }
+
+    public List<Integer> getOrderidList() {
+        return orderidList;
+    }
+
+    public void setShow(Integer show) {
+        this.show = show;
+    }
+
+    public Integer getShow() {
+        return show;
+    }
+
+    public void setShowMin(Integer showMin) {
+        this.showMin = showMin;
+    }
+
+    public Integer getShowMin() {
+        return showMin;
+    }
+
+    public void setShowMax(Integer showMax) {
+        this.showMax = showMax;
+    }
+
+    public Integer getShowMax() {
+        return showMax;
+    }
+
+    public void setShowList(List<Integer> showList) {
+        this.showList = showList;
+    }
+
+    public List<Integer> getShowList() {
+        return showList;
     }
 }
